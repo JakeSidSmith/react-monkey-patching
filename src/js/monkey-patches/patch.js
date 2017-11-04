@@ -32,12 +32,16 @@ export const patch = (transform) => {
         element.prototype instanceof React.Component &&
         typeof element.prototype.render === 'function'
       ) {
-        const originalRender = element.prototype.render;
+        if (!element.prototype.render.__patched) {
+          const originalRender = element.prototype.render;
 
-        element.prototype.render = function render () {
-          const renderArgs = Array.prototype.slice.call(arguments);
-          return transformPossibleArrays(originalRender.apply(this, renderArgs));
-        };
+          element.prototype.render = function render () {
+            const renderArgs = Array.prototype.slice.call(arguments);
+            return transformPossibleArrays(originalRender.apply(this, renderArgs));
+          };
+
+          element.prototype.render.__patched = true;
+        }
       } else {
         const originalElement = element;
 
