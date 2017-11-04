@@ -33,7 +33,7 @@ export const patch = (transform) => {
 
         element.prototype.render = function render () {
           const renderArgs = Array.prototype.slice.call(arguments);
-          return transformPossibleArrays(originalRender.apply(element, renderArgs));
+          return transformPossibleArrays(originalRender.apply(this, renderArgs));
         };
       } else {
         const originalElement = element;
