@@ -32,7 +32,25 @@ const ArraySFC = () => (
 );
 
 export default class App extends Component {
+  constructor (props) {
+    super(props);
+
+    this.state = {
+      value: ''
+    };
+
+    this.onChange = this.onChange.bind(this);
+  }
+
+  onChange (event) {
+    this.setState({
+      value: event.target.value
+    });
+  }
+
   render () {
+    const { value } = this.state;
+
     return (
       <div>
         <p>
@@ -57,7 +75,12 @@ export default class App extends Component {
           <input type="button" value="Input type = button" />
         </p>
         <p>
-          <input type="text" placeholder="Input type = text placeholder" />
+          <input
+            type="text"
+            placeholder="Input type = text placeholder"
+            value={value}
+            onChange={this.onChange}
+          />
         </p>
         <p>
           <img alt="Alt text" />
