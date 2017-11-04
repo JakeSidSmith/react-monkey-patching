@@ -1,0 +1,10 @@
+/node_modules/*
+/coverage/*
+/build/*
+/dist/*
+
+!/build/index.html
+!/build/images/*
+
+npm-debug.log*
+.DS_Store

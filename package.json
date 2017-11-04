@@ -1,0 +1,66 @@
+{
+  "name": "react-monkey-patching",
+  "version": "0.0.0",
+  "description": "Some useful examples of monkey patching React",
+  "main": "src/js/index.js",
+  "scripts": {
+    "build": "./scripts/build",
+    "start": "./scripts/start",
+    "lint": "eslint src/ tests/",
+    "tests": "jest",
+    "test": "npm run lint && npm run tests -- --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakesidsmith/react-monkey-patching.git"
+  },
+  "keywords": [
+    "react",
+    "monkey",
+    "patch",
+    "mutate",
+    "modify",
+    "example",
+    "examples"
+  ],
+  "author": "Jake 'Sid' Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jakesidsmith/react-monkey-patching/issues"
+  },
+  "homepage": "https://github.com/jakesidsmith/react-monkey-patching#readme",
+  "dependencies": {
+    "babel-core": "6.26.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-react": "6.24.1",
+    "babelify": "8.0.0",
+    "browserify": "14.5.0",
+    "envify": "4.1.0",
+    "less": "2.7.3",
+    "react": "16.0.0",
+    "react-dom": "16.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "3.5.0",
+    "eslint": "3.19.0",
+    "eslint-config-jakesidsmith": "github:jakesidsmith/eslint-config-jakesidsmith",
+    "http-server": "0.10.0",
+    "jest": "21.2.1",
+    "livereload": "0.6.3",
+    "react-test-renderer": "16.0.0",
+    "watchify": "3.9.0"
+  },
+  "jest": {
+    "testMatch": [
+      "**/(__tests__|tests)/**/*.js?(x)",
+      "**/?(*.)(spec|test).js?(x)"
+    ],
+    "collectCoverageFrom": [
+      "src/js/**/*.js"
+    ],
+    "coveragePathIgnorePatterns": [
+      "src/js/index.js",
+      "src/js/livereload.js"
+    ]
+  }
+}

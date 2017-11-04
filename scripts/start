@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+set -e
+
+rm -rf build/js/
+rm -rf build/css/
+
+mkdir -p build/js/
+mkdir -p build/css/
+
+concurrently --kill-others \
+  --prefix='name' \
+  --names='watch-less ,watch-js   ,livereload ,http-server' \
+  --prefix-colors='cyan,red,magenta,green' \
+  'watch-less-do-more -u autoprefixer -i src/less/index.less -o build/css/index.css' \
+  'LIVERELOAD=true watchify -d src/js/index.js -t babelify -t envify -o build/js/index.js -v' \
+  'livereload build/' \
+  'http-server -c-0 build/ -o'
