@@ -47,7 +47,7 @@ export const patch = (transform) => {
         };
       }
     } else if (element === 'input' && props && typeof props === 'object') {
-      if (props.placeholder) {
+      if (typeof props.placeholder === 'string') {
         props.placeholder = transform(props.placeholder);
       }
 
