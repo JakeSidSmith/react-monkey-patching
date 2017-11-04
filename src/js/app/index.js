@@ -9,15 +9,26 @@ class StringClass extends Component {
   }
 }
 
-const ArrayComponent = () => (
-  [
-    'Array',
-    'Items'
-  ]
+class ArrayClass extends Component {
+  render () {
+    return [
+      [
+        'Array',
+        'class'
+      ]
+    ];
+  }
+}
+
+const StringSFC = () => (
+  'String SFC'
 );
 
-const StringComponent = () => (
-  'String SFC'
+const ArraySFC = () => (
+  [
+    'Array',
+    'SFC'
+  ]
 );
 
 export default class App extends Component {
@@ -28,13 +39,16 @@ export default class App extends Component {
           Hello, World!
         </p>
         <p>
-          <ArrayComponent />
-        </p>
-        <p>
-          <StringComponent />
-        </p>
-        <p>
           <StringClass />
+        </p>
+        <p>
+          <ArrayClass />
+        </p>
+        <p>
+          <StringSFC />
+        </p>
+        <p>
+          <ArraySFC />
         </p>
         <p>
           <input type="submit" value="Input type = submit" />
@@ -44,6 +58,14 @@ export default class App extends Component {
         </p>
         <p>
           <input type="text" placeholder="Input type = text placeholder" />
+        </p>
+        <p>
+          <img alt="Alt text" />
+        </p>
+        <p>
+          <a href="#" title="Link title">
+            Link with title
+          </a>
         </p>
       </div>
     );
