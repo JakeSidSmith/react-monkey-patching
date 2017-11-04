@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
 // import '../monkey-patches/scramble';
 import '../monkey-patches/llamify';
 
-class StringClass extends Component {
+class StringClass extends PureComponent {
   render () {
     return 'String class';
   }
 }
 
-class ArrayClass extends Component {
+class ArrayClass extends PureComponent {
   render () {
     return [
       [
@@ -31,7 +31,7 @@ const ArraySFC = () => (
   ]
 );
 
-export default class App extends Component {
+export default class App extends PureComponent {
   constructor (props) {
     super(props);
 

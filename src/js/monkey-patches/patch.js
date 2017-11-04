@@ -28,7 +28,10 @@ export const patch = (transform) => {
     const props = args[1];
 
     if (typeof element === 'function') {
-      if (typeof element.prototype.render === 'function') {
+      if (
+        element.prototype instanceof React.Component &&
+        typeof element.prototype.render === 'function'
+      ) {
         const originalRender = element.prototype.render;
 
         element.prototype.render = function render () {
