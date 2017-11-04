@@ -3,6 +3,12 @@ import React, { Component } from 'react';
 import '../monkey-patches/llamify';
 // import '../monkey-patches/scramble';
 
+class StringClass extends Component {
+  render () {
+    return 'String class';
+  }
+}
+
 const ArrayComponent = () => (
   [
     'Array',
@@ -11,7 +17,7 @@ const ArrayComponent = () => (
 );
 
 const StringComponent = () => (
-  'String'
+  'String SFC'
 );
 
 export default class App extends Component {
@@ -26,6 +32,9 @@ export default class App extends Component {
         </p>
         <p>
           <StringComponent />
+        </p>
+        <p>
+          <StringClass />
         </p>
         <p>
           <input type="submit" value="Input type = submit" />
