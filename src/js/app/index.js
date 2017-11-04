@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 // import '../monkey-patches/llamify';
-import '../monkey-patches/scramble';
+// import '../monkey-patches/scramble';
 
 const ArrayComponent = () => (
   [
