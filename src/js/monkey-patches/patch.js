@@ -6,27 +6,28 @@ export const patch = (transform) => {
   React.createElement = function () {
     const args = Array.prototype.slice.call(arguments);
 
-    for (let i = 1; i < args.length; i += 1) {
-      const arg = args[i];
-
-      if (typeof arg === 'string') {
-        args[i] = transform(arg);
+    args.forEach((arg, i) => {
+      if (i >= 2) {
+        if (typeof arg === 'string') {
+          args[i] = transform(arg);
+        }
       }
-    }
+    });
 
-    if (args[0] === 'input' && args[1] && typeof args[1] === 'object') {
-      const arg = args[1];
+    const element = args[0];
+    const props = args[1];
 
-      if (arg.placeholder) {
-        arg.placeholder = transform(arg.placeholder);
+    if (element === 'input' && props && typeof props === 'object') {
+      if (props.placeholder) {
+        props.placeholder = transform(props.placeholder);
       }
 
       if (
-        (arg.type === 'submit' || arg.type === 'button') &&
-        arg.value &&
-        typeof arg.value === 'string'
+        (props.type === 'submit' || props.type === 'button') &&
+        props.value &&
+        typeof props.value === 'string'
       ) {
-        arg.value = transform(arg.value);
+        props.value = transform(props.value);
       }
     }
 
