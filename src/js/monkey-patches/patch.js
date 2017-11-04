@@ -1,15 +1,25 @@
 import React from 'react';
 
 export const patch = (transform) => {
-  const createElement = React.createElement;
+  const originalCreateElement = React.createElement;
 
-  React.createElement = function () {
+  function transformPossibleArrays (arg) {
+    if (typeof arg === 'string') {
+      return transform(arg);
+    } else if (Array.isArray(arg)) {
+      return arg.map(transformPossibleArrays);
+    }
+
+    return arg;
+  }
+
+  React.createElement = function createElement () {
     const args = Array.prototype.slice.call(arguments);
 
     args.forEach((arg, i) => {
       if (i >= 2) {
         if (typeof arg === 'string') {
-          args[i] = transform(arg);
+          args[i] = transformPossibleArrays(arg);
         }
       }
     });
@@ -17,7 +27,23 @@ export const patch = (transform) => {
     const element = args[0];
     const props = args[1];
 
-    if (element === 'input' && props && typeof props === 'object') {
+    if (typeof element === 'function') {
+      if (typeof element.prototype.render === 'function') {
+        const originalRender = element.prototype.render;
+
+        element.prototype.render = function render () {
+          const renderArgs = Array.prototype.slice.call(arguments);
+          return transformPossibleArrays(originalRender.apply(element, renderArgs));
+        };
+      } else {
+        const originalElement = element;
+
+        args[0] = function () {
+          const sfcArgs = Array.prototype.slice.call(arguments);
+          return transformPossibleArrays(originalElement.apply(this, sfcArgs));
+        };
+      }
+    } else if (element === 'input' && props && typeof props === 'object') {
       if (props.placeholder) {
         props.placeholder = transform(props.placeholder);
       }
@@ -31,6 +57,6 @@ export const patch = (transform) => {
       }
     }
 
-    return createElement.apply(React, args);
+    return originalCreateElement.apply(React, args);
   };
 };
