@@ -55,6 +55,14 @@ export const patch = (transform) => {
       ) {
         props.value = transform(props.value);
       }
+    } else if (element === 'a') {
+      if (typeof props.title === 'string') {
+        props.title = transform(props.title);
+      }
+    } else if (element === 'img') {
+      if (typeof props.alt === 'string') {
+        props.alt = transform(props.alt);
+      }
     }
 
     return originalCreateElement.apply(React, args);
