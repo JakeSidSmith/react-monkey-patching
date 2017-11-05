@@ -1,7 +1,56 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App should match snapshot 1`] = `
-<p>
-  Hello, World!
-</p>
+<div>
+  <p>
+    Hello, World!
+  </p>
+  <p>
+    String class
+  </p>
+  <p>
+    Array
+    class
+  </p>
+  <p>
+    String SFC
+  </p>
+  <p>
+    Array
+    SFC
+  </p>
+  <p>
+    <input
+      type="submit"
+      value="Input type = submit"
+    />
+  </p>
+  <p>
+    <input
+      type="button"
+      value="Input type = button"
+    />
+  </p>
+  <p>
+    <input
+      onChange={[Function]}
+      placeholder="Input type = text placeholder"
+      type="text"
+      value=""
+    />
+  </p>
+  <p>
+    <img
+      alt="Alt text"
+    />
+  </p>
+  <p>
+    <a
+      href="#"
+      title="Link title"
+    >
+      Link with title
+    </a>
+  </p>
+</div>
 `;

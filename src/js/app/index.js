@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 
 // import '../monkey-patches/scramble';
-import '../monkey-patches/llamify';
+// import '../monkey-patches/llamify';
 
 class StringClass extends PureComponent {
   render () {
