@@ -52,6 +52,23 @@ exports[`App should match snapshot 1`] = `
       Link with title
     </a>
   </p>
+  <p>
+    Alt number
+    <img
+      alt={1}
+    />
+  </p>
+  <p>
+    <a
+      href="#"
+      title={1}
+    >
+      Link with title that's a number
+    </a>
+  </p>
+  <p>
+    Short word that doesn't need scrambling: "hi"
+  </p>
 </div>
 `;
 
@@ -107,6 +124,23 @@ exports[`App should match snapshot when llamified 1`] = `
       Llama llama llama
     </a>
   </p>
+  <p>
+    Llama llama
+    <img
+      alt={1}
+    />
+  </p>
+  <p>
+    <a
+      href="#"
+      title={1}
+    >
+      Llama llama llama llama'llama llama llama
+    </a>
+  </p>
+  <p>
+    Llama llama llama llama'llama llama llama: "llama"
+  </p>
 </div>
 `;
 
@@ -123,7 +157,7 @@ exports[`App should match snapshot when scrambled 1`] = `
     llama
   </p>
   <p>
-    Sitrng SFC
+    Stinrg SFC
   </p>
   <p>
     Array
@@ -161,6 +195,23 @@ exports[`App should match snapshot when scrambled 1`] = `
     >
       Lnik with tlite
     </a>
+  </p>
+  <p>
+    Alt nbmeur
+    <img
+      alt={1}
+    />
+  </p>
+  <p>
+    <a
+      href="#"
+      title={1}
+    >
+      Lnik with title that's a nmbeur
+    </a>
+  </p>
+  <p>
+    Sohrt word taht dseon't need salbmicnrg: "hi"
   </p>
 </div>
 `;

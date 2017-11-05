@@ -87,6 +87,18 @@ export default class App extends PureComponent {
             Link with title
           </a>
         </p>
+        <p>
+          Alt number
+          <img alt={1} />
+        </p>
+        <p>
+          <a href="#" title={1}>
+            Link with title that's a number
+          </a>
+        </p>
+        <p>
+          Short word that doesn't need scrambling: "hi"
+        </p>
       </div>
     );
   }
