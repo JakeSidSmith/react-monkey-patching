@@ -1,7 +1,217 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App should match snapshot 1`] = `
-<p>
-  Hello, World!
-</p>
+<div>
+  <p>
+    Hello, World!
+  </p>
+  <p>
+    String class
+  </p>
+  <p>
+    Array
+    class
+  </p>
+  <p>
+    String SFC
+  </p>
+  <p>
+    Array
+    SFC
+  </p>
+  <p>
+    <input
+      type="submit"
+      value="Input type = submit"
+    />
+  </p>
+  <p>
+    <input
+      type="button"
+      value="Input type = button"
+    />
+  </p>
+  <p>
+    <input
+      onChange={[Function]}
+      placeholder="Input type = text placeholder"
+      type="text"
+      value=""
+    />
+  </p>
+  <p>
+    <img
+      alt="Alt text"
+    />
+  </p>
+  <p>
+    <a
+      href="#"
+      title="Link title"
+    >
+      Link with title
+    </a>
+  </p>
+  <p>
+    Alt number
+    <img
+      alt={1}
+    />
+  </p>
+  <p>
+    <a
+      href="#"
+      title={1}
+    >
+      Link with title that's a number
+    </a>
+  </p>
+  <p>
+    Short word that doesn't need scrambling: "hi"
+  </p>
+</div>
+`;
+
+exports[`App should match snapshot when llamified 1`] = `
+<div>
+  <p>
+    Llama, Llama!
+  </p>
+  <p>
+    Llama llama
+  </p>
+  <p>
+    Llama
+    llama
+  </p>
+  <p>
+    Llama LLAMA
+  </p>
+  <p>
+    Llama
+    LLAMA
+  </p>
+  <p>
+    <input
+      type="submit"
+      value="Llama llama = llama"
+    />
+  </p>
+  <p>
+    <input
+      type="button"
+      value="Llama llama = llama"
+    />
+  </p>
+  <p>
+    <input
+      onChange={[Function]}
+      placeholder="Llama llama = llama llama"
+      type="text"
+      value=""
+    />
+  </p>
+  <p>
+    <img
+      alt="Llama llama"
+    />
+  </p>
+  <p>
+    <a
+      href="#"
+      title="Llama llama"
+    >
+      Llama llama llama
+    </a>
+  </p>
+  <p>
+    Llama llama
+    <img
+      alt={1}
+    />
+  </p>
+  <p>
+    <a
+      href="#"
+      title={1}
+    >
+      Llama llama llama llama'llama llama llama
+    </a>
+  </p>
+  <p>
+    Llama llama llama llama'llama llama llama: "llama"
+  </p>
+</div>
+`;
+
+exports[`App should match snapshot when scrambled 1`] = `
+<div>
+  <p>
+    Hello, World!
+  </p>
+  <p>
+    Llama llama
+  </p>
+  <p>
+    Llama
+    llama
+  </p>
+  <p>
+    Stinrg SFC
+  </p>
+  <p>
+    Array
+    SFC
+  </p>
+  <p>
+    <input
+      type="submit"
+      value="Ipunt type = sbimut"
+    />
+  </p>
+  <p>
+    <input
+      type="button"
+      value="Inupt type = button"
+    />
+  </p>
+  <p>
+    <input
+      onChange={[Function]}
+      placeholder="Ipunt type = text pcholleedar"
+      type="text"
+      value=""
+    />
+  </p>
+  <p>
+    <img
+      alt="Alt text"
+    />
+  </p>
+  <p>
+    <a
+      href="#"
+      title="Lnik ttile"
+    >
+      Lnik with tlite
+    </a>
+  </p>
+  <p>
+    Alt nbmeur
+    <img
+      alt={1}
+    />
+  </p>
+  <p>
+    <a
+      href="#"
+      title={1}
+    >
+      Lnik with title that's a nmbeur
+    </a>
+  </p>
+  <p>
+    Sohrt word taht dseon't need salbmicnrg: "hi"
+  </p>
+</div>
 `;

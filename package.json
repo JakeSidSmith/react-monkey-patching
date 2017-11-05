@@ -37,6 +37,7 @@
     "browserify": "14.5.0",
     "envify": "4.1.0",
     "less": "2.7.3",
+    "random-seed": "0.3.0",
     "react": "16.0.0",
     "react-dom": "16.0.0"
   },
