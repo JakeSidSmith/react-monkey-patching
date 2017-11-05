@@ -54,3 +54,113 @@ exports[`App should match snapshot 1`] = `
   </p>
 </div>
 `;
+
+exports[`App should match snapshot when llamified 1`] = `
+<div>
+  <p>
+    Llama, Llama!
+  </p>
+  <p>
+    Llama llama
+  </p>
+  <p>
+    Llama
+    llama
+  </p>
+  <p>
+    Llama LLAMA
+  </p>
+  <p>
+    Llama
+    LLAMA
+  </p>
+  <p>
+    <input
+      type="submit"
+      value="Llama llama = llama"
+    />
+  </p>
+  <p>
+    <input
+      type="button"
+      value="Llama llama = llama"
+    />
+  </p>
+  <p>
+    <input
+      onChange={[Function]}
+      placeholder="Llama llama = llama llama"
+      type="text"
+      value=""
+    />
+  </p>
+  <p>
+    <img
+      alt="Llama llama"
+    />
+  </p>
+  <p>
+    <a
+      href="#"
+      title="Llama llama"
+    >
+      Llama llama llama
+    </a>
+  </p>
+</div>
+`;
+
+exports[`App should match snapshot when scrambled 1`] = `
+<div>
+  <p>
+    Hlleo, World!
+  </p>
+  <p>
+    Llama llama
+  </p>
+  <p>
+    Llama
+    llama
+  </p>
+  <p>
+    String SFC
+  </p>
+  <p>
+    Array
+    SFC
+  </p>
+  <p>
+    <input
+      type="submit"
+      value="Ipnut type = smiubt"
+    />
+  </p>
+  <p>
+    <input
+      type="button"
+      value="Inupt type = bttuon"
+    />
+  </p>
+  <p>
+    <input
+      onChange={[Function]}
+      placeholder="Inupt type = txet paocllheder"
+      type="text"
+      value=""
+    />
+  </p>
+  <p>
+    <img
+      alt="Alt txet"
+    />
+  </p>
+  <p>
+    <a
+      href="#"
+      title="Link tilte"
+    >
+      Link wtih title
+    </a>
+  </p>
+</div>
+`;
