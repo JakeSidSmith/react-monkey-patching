@@ -6,12 +6,16 @@
 
 ## Setup
 
-To install dependencies & run a dev server run the following commands
+To install dependencies & run a dev server run the following commands.
 
 ```shell
 npm install
 npm start
 ```
+
+This will allow you to use JSX and ES6 syntax in any of the files in the `src/js/` directory, and less in the `src/less/` directory.
+
+Any file changes will automatically reload the examples.
 
 ## Experiment
 
