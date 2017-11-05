@@ -1,4 +1,9 @@
+import { create } from 'random-seed';
 import { patch } from './patch';
+
+const SEED = 'my-random-seed';
+
+const random = create(SEED);
 
 const wordFinder = /\b[a-z]+\b/gi;
 
@@ -12,8 +17,8 @@ const scrambleWord = (word) => {
   const lastLetter = newWord.pop();
 
   for (let i = 0; i < word.length; i += 1) {
-    const from = Math.floor(Math.random() * word.length);
-    const to = Math.floor(Math.random() * word.length);
+    const from = random(word.length);
+    const to = random(word.length);
     newWord.splice(to, 0, newWord.splice(from, 1)[0]);
   }
 

@@ -113,7 +113,7 @@ exports[`App should match snapshot when llamified 1`] = `
 exports[`App should match snapshot when scrambled 1`] = `
 <div>
   <p>
-    Hlleo, World!
+    Hello, World!
   </p>
   <p>
     Llama llama
@@ -123,7 +123,7 @@ exports[`App should match snapshot when scrambled 1`] = `
     llama
   </p>
   <p>
-    String SFC
+    Sitrng SFC
   </p>
   <p>
     Array
@@ -132,34 +132,34 @@ exports[`App should match snapshot when scrambled 1`] = `
   <p>
     <input
       type="submit"
-      value="Ipnut type = smiubt"
+      value="Ipunt type = sbimut"
     />
   </p>
   <p>
     <input
       type="button"
-      value="Inupt type = bttuon"
+      value="Inupt type = button"
     />
   </p>
   <p>
     <input
       onChange={[Function]}
-      placeholder="Inupt type = txet paocllheder"
+      placeholder="Ipunt type = text pcholleedar"
       type="text"
       value=""
     />
   </p>
   <p>
     <img
-      alt="Alt txet"
+      alt="Alt text"
     />
   </p>
   <p>
     <a
       href="#"
-      title="Link tilte"
+      title="Lnik ttile"
     >
-      Link wtih title
+      Lnik with tlite
     </a>
   </p>
 </div>
