@@ -27,4 +27,13 @@ describe('App', () => {
     expect(renderer.create(<App />)).toMatchSnapshot();
   });
 
+  it('should set a new value from input on state', () => {
+    const instance = new App();
+    jest.spyOn(instance, 'setState').mockImplementation();
+
+    instance.onChange({target: {value: 7}});
+
+    expect(instance.setState).toHaveBeenCalledWith({value: 7});
+  });
+
 });
