@@ -1,7 +1,8 @@
-import './livereload';
+import { polyfill as polyfillRaf } from 'raf';
 
-// import './monkey-patches/scramble';
-// import './monkey-patches/llamify';
+polyfillRaf();
+
+import './livereload';
 
 import React from 'react';
 import ReactDOM from 'react-dom';

@@ -1,10 +1,12 @@
 import React from 'react';
+import ApplyButton from '../apply-button';
+import PatchableComponent from '../../monkey-patches/patchable-component';
 
-export default class ReactHighlightUpdates extends React.PureComponent {
+export default class ReactHighlightUpdates extends PatchableComponent {
   render () {
     return (
       <div>
-        React highlight updates
+        <ApplyButton patch={'highlightUpdates'} />
       </div>
     );
   }

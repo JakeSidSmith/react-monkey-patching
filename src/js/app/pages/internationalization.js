@@ -1,6 +1,7 @@
 import React from 'react';
+import PatchableComponent from '../../monkey-patches/patchable-component';
 
-export default class Internationalization extends React.PureComponent {
+export default class Internationalization extends PatchableComponent {
   render () {
     return (
       <div>

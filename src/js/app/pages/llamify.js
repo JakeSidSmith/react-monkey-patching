@@ -1,12 +1,14 @@
 import React from 'react';
+import ApplyButton from '../apply-button';
+import PatchableComponent from '../../monkey-patches/patchable-component';
 
-class StringClass extends React.PureComponent {
+class StringClass extends PatchableComponent {
   render () {
     return 'String class';
   }
 }
 
-class ArrayClass extends React.PureComponent {
+class ArrayClass extends PatchableComponent {
   render () {
     return [
       [
@@ -28,7 +30,7 @@ const ArraySFC = () => (
   ]
 );
 
-export default class Llamify extends React.PureComponent {
+export default class Llamify extends PatchableComponent {
   constructor (props) {
     super(props);
 
@@ -50,6 +52,7 @@ export default class Llamify extends React.PureComponent {
 
     return (
       <div>
+        <ApplyButton patch="llamify" />
         <p>
           Hello, World!
         </p>
