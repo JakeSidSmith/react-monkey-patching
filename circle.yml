@@ -12,4 +12,4 @@ deployment:
     branch: master
     commands:
       - npm run build
-      - scripts/deploy.sh
+      - ./scripts/deploy
