@@ -12,22 +12,22 @@ export default class Navigation extends React.PureComponent {
             </Link>
           </li>
           <li>
-            <Link to="/monkey-patching/">
+            <Link to="/what-is-monkey-patching/">
               What is monkey patching?
             </Link>
           </li>
           <li>
-            <Link to="/react-create-element/">
+            <Link to="/why-react-create-element/">
               Why React?
             </Link>
           </li>
           <li>
-            <Link to="/highlight-updates/">
+            <Link to="/react-highlight-updates/">
               React highlight updates
             </Link>
           </li>
           <li>
-            <Link to="/material-ui-button/">
+            <Link to="/material-ui-button-effect/">
               Material UI button effect
             </Link>
           </li>
@@ -37,7 +37,7 @@ export default class Navigation extends React.PureComponent {
             </Link>
           </li>
           <li>
-            <Link to="/patch-function/">
+            <Link to="/simple-patch-function/">
               Simple patch function
             </Link>
           </li>
