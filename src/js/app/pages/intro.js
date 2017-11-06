@@ -21,10 +21,10 @@ export default class MonkeyPatching extends React.PureComponent {
           <li>
             <a
               title="This demo"
-              href="https://jakesidsmith.github.io/react-monkey-patching/"
+              href="https://github.com/JakeSidSmith/react-monkey-patching"
               target="_blank"
             >
-              This demo - jakesidsmith.github.io/react-monkey-patching/
+              This demo - github.com/JakeSidSmith/react-monkey-patching
             </a>
           </li>
           <li>
@@ -39,19 +39,19 @@ export default class MonkeyPatching extends React.PureComponent {
           <li>
             <a
               title="My GitHub"
-              href="https://github.com/jakesidsmith/"
+              href="https://github.com/jakesidsmith"
               target="_blank"
             >
-              My GitHub - github.com/jakesidsmith/
+              My GitHub - github.com/jakesidsmith
             </a>
           </li>
           <li>
             <a
               title="My Twitter"
-              href="https://twitter.com/jakesidsmith/"
+              href="https://twitter.com/jakesidsmith"
               target="_blank"
             >
-              My Twitter - twitter.com/jakesidsmith/
+              My Twitter - twitter.com/jakesidsmith
             </a>
           </li>
           <li>
