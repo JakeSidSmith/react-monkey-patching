@@ -55,62 +55,70 @@ export default class App extends PureComponent {
 
     return (
       <HashRouter>
-        <div>
-          <Navigation />
-          <Route exact path="/" component={Home} />
-          <Route exact path="/monkey-patching/" component={Intro} />
-          <div>
-            <p>
-              Hello, World!
-            </p>
-            <p>
-              <StringClass />
-            </p>
-            <p>
-              <ArrayClass />
-            </p>
-            <p>
-              <StringSFC />
-            </p>
-            <p>
-              <ArraySFC />
-            </p>
-            <p>
-              <input type="submit" value="Input type = submit" />
-            </p>
-            <p>
-              <input type="button" value="Input type = button" />
-            </p>
-            <p>
-              <input
-                type="text"
-                placeholder="Input type = text placeholder"
-                value={value}
-                onChange={this.onChange}
-              />
-            </p>
-            <p>
-              <img alt="Alt text" />
-            </p>
-            <p>
-              <a href="#" title="Link title">
-                Link with title
-              </a>
-            </p>
-            <p>
-              Alt number
-              <img alt={1} />
-            </p>
-            <p>
-              <a href="#" title={1}>
-                Link with title that's a number
-              </a>
-            </p>
-            <p>
-              Short word that doesn't need scrambling: "hi"
-            </p>
-          </div>
-        </div>
+        <table className="app">
+          <tbody>
+            <tr>
+              <td className="navigation">
+                <Navigation />
+              </td>
+              <td className="main">
+                <Route exact path="/" component={Home} />
+                <Route exact path="/monkey-patching/" component={Intro} />
+                <div>
+                  <p>
+                    Hello, World!
+                  </p>
+                  <p>
+                    <StringClass />
+                  </p>
+                  <p>
+                    <ArrayClass />
+                  </p>
+                  <p>
+                    <StringSFC />
+                  </p>
+                  <p>
+                    <ArraySFC />
+                  </p>
+                  <p>
+                    <input type="submit" value="Input type = submit" />
+                  </p>
+                  <p>
+                    <input type="button" value="Input type = button" />
+                  </p>
+                  <p>
+                    <input
+                      type="text"
+                      placeholder="Input type = text placeholder"
+                      value={value}
+                      onChange={this.onChange}
+                    />
+                  </p>
+                  <p>
+                    <img alt="Alt text" />
+                  </p>
+                  <p>
+                    <a href="#" title="Link title">
+                      Link with title
+                    </a>
+                  </p>
+                  <p>
+                    Alt number
+                    <img alt={1} />
+                  </p>
+                  <p>
+                    <a href="#" title={1}>
+                      Link with title that's a number
+                    </a>
+                  </p>
+                  <p>
+                    Short word that doesn't need scrambling: "hi"
+                  </p>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </HashRouter>
     );
   }
