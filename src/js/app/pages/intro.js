@@ -8,8 +8,8 @@ export default class MonkeyPatching extends React.PureComponent {
           Monkey Patching React
         </h2>
         <p>
-          Hello! My name is Jake, and today I'm going to show you some totally not hacks at all, really not hacks,
-          believe me, I promise, awesome monkey patching of React.
+          Hello! My name is Jake, and today I'm going to show you some totally not hacks at all,
+          believe me, I promise, really not hacks... awesome monkey patching of React.
         </p>
         <h2>
           Want more awesome stuff?
