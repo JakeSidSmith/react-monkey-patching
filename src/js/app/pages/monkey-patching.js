@@ -10,6 +10,11 @@ export default class MonkeyPatching extends React.PureComponent {
         <p>
           A monkey patch is a way for a program to extend or modify supporting system software locally (affecting only the running instance of the program).
         </p>
+        <p>
+          <a title="Wikipedia - Monkey patch" href="https://en.wikipedia.org/wiki/Monkey_patch" target="_blank">
+            Wikipedia article
+          </a>
+        </p>
         <h2>
           So why's it called that?
         </h2>
@@ -24,7 +29,9 @@ export default class MonkeyPatching extends React.PureComponent {
             Replace methods / attributes / functions at runtime, e.g. to stub out a function during testing;
           </li>
           <li>
-            Modify/extend behaviour of a third-party product without maintaining a private copy of the source code;
+            <strong>
+              Modify/extend behaviour of a third-party product without maintaining a private copy of the source code;
+            </strong> (this is what we'll be covering today)
           </li>
           <li>
             Apply a patch at runtime to the objects in memory, instead of the source code on disk;
