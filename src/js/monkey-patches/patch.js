@@ -88,7 +88,6 @@ export const patch = (transform) => {
 
     while (patchedClasses.length) {
       const patchedClass = patchedClasses.shift();
-      console.log(patchedClass, patchedClasses);
       patchedClass.prototype.render = patchedMethods.shift();
     }
   };

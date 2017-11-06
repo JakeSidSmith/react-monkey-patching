@@ -81,7 +81,6 @@ const highlightUpdates = (color = 'rgba(255, 0, 0, 0.5)') => {
 
     while (patchedClasses.length) {
       const patchedClass = patchedClasses.shift();
-      console.log(patchedClass, patchedClasses);
       patchedClass.prototype.componentDidUpdate = patchedMethods.shift();
     }
   };
