@@ -1,7 +1,7 @@
 import './livereload';
 
-// import '../monkey-patches/scramble';
-// import '../monkey-patches/llamify';
+// import './monkey-patches/scramble';
+// import './monkey-patches/llamify';
 
 import React from 'React';
 import ReactDOM from 'react-dom';

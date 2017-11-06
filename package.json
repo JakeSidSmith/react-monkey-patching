@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/jakesidsmith/react-monkey-patching#readme",
   "dependencies": {
+    "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
     "babel-preset-es2015": "6.24.1",
     "babel-preset-react": "6.24.1",
@@ -37,9 +38,12 @@
     "browserify": "14.5.0",
     "envify": "4.1.0",
     "less": "2.7.3",
+    "postcss": "6.0.14",
+    "postcss-cli": "4.1.1",
     "random-seed": "0.3.0",
     "react": "16.0.0",
-    "react-dom": "16.0.0"
+    "react-dom": "16.0.0",
+    "react-router-dom": "4.2.2"
   },
   "devDependencies": {
     "concurrently": "3.5.0",
@@ -49,6 +53,7 @@
     "jest": "21.2.1",
     "livereload": "0.6.3",
     "react-test-renderer": "16.0.0",
+    "watch-less-do-more": "0.2.0",
     "watchify": "3.9.0"
   },
   "jest": {

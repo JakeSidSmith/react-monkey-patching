@@ -1,3 +1,14 @@
+@background-color: #FFF;
+@font-color: #333;
+@font-size-base: 16px;
+@margin-base: 10px;
+@padding-base: @margin-base;
+@title-font-size: 32px;
+@title-height: @title-font-size + @padding-base * 2;
+@shadow-color: rgba(0, 0, 0, 0.5);
+@code-background: #EFEFEF;
+@boder-color: #DDD;
+
 * {
   box-sizing: border-box;
 }
@@ -7,7 +18,130 @@ body {
   margin: 0;
   padding: 0;
   font-family: arial, helvetica, sans-serif;
-  font-size: 14px;
-  color: #333;
-  background-color: #FFF;
+  font-size: @font-size-base;
+  color: @font-color;
+  background-color: @background-color;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  line-height: 1.5;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: @margin-base * 4 0;
+}
+
+li {
+  margin: @margin-base 0;
+}
+
+pre,
+code {
+  font-size: @font-size-base;
+  background-color: @code-background;
+  border-radius: 2px;
+}
+
+code {
+  padding: @padding-base * 0.25 @padding-base * 0.5;
+}
+
+pre {
+  border: 1px solid @boder-color;
+  overflow: auto;
+  padding: @padding-base;
+}
+
+.app {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  table-layout: fixed;
+
+  & > tbody > tr > td {
+    position: relative;
+    vertical-align: top;
+  }
+}
+
+.main .scrollable {
+  padding-top: @title-height;
+}
+
+.page-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  margin: 0;
+  font-size: @title-font-size;
+  line-height: 1;
+  padding: @padding-base;
+  background: linear-gradient(@background-color, 75%, transparent);
+}
+
+.scrollable {
+  position: absolute;
+  display: table-cell;
+  vertical-align: middle;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 0;
+  padding: @padding-base * 2;
+}
+
+.container {
+  display: table;
+  table-layout: fixed;
+  postion: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+
+  .vertical-center {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.navigation {
+  background-color: @background-color;
+  box-shadow: 0 0 5px 0 @shadow-color;
+  width: 220px;
+  z-index: 2;
+
+  .scrollable {
+    padding: 0 @padding-base;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding: 0;
+    }
+  }
 }
