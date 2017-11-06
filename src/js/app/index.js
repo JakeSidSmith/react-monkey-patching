@@ -27,7 +27,7 @@ export default class App extends PatchableComponent {
                     path={path}
                     render={() => ( // eslint-disable-line react/jsx-no-bind
                       <div>
-                        <PageTitle data-no-patch>
+                        <PageTitle>
                           {name}
                         </PageTitle>
                         <Scrollable>
