@@ -32,4 +32,4 @@ const scrambleWords = (text) => {
   return text.replace(wordFinder, scrambleWord);
 };
 
-patch(scrambleWords);
+export default () => patch(scrambleWords);

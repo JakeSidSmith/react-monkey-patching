@@ -1,4 +1,10 @@
 import llamify from './llamify';
+import scramble from './scramble';
+
+const PATCHES = {
+  llamify,
+  scramble
+};
 
 const subscriptions = [];
 
@@ -20,10 +26,6 @@ const updateComponents = () => {
   subscriptions.forEach((callback) => {
     callback();
   });
-};
-
-const PATCHES = {
-  llamify
 };
 
 let unpatch;
