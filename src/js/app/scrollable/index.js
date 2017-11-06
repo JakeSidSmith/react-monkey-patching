@@ -1,6 +1,7 @@
 import React from 'react';
+import PatchableComponent from '../../monkey-patches/patchable-component';
 
-export default class Scrollable extends React.PureComponent {
+export default class Scrollable extends PatchableComponent {
   render () {
     const { children } = this.props;
 

@@ -5,8 +5,9 @@ import PageTitle from './page-title';
 import Scrollable from './scrollable';
 import Container from './container';
 import routes from '../routes';
+import PatchableComponent from '../monkey-patches/patchable-component';
 
-export default class App extends React.PureComponent {
+export default class App extends PatchableComponent {
   render () {
     return (
       <HashRouter>

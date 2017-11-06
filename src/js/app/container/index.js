@@ -1,6 +1,7 @@
 import React from 'react';
+import PatchableComponent from '../../monkey-patches/patchable-component';
 
-export default class VerticalCenter extends React.PureComponent {
+export default class VerticalCenter extends PatchableComponent {
   render () {
     const { children } = this.props;
 
