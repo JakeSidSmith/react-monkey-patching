@@ -1,5 +1,13 @@
 import Intro from './app/pages/intro';
 import MonkeyPatching from './app/pages/monkey-patching';
+import ReactCreateElement from './app/pages/react-create-element';
+import ReactHighlightUpdates from './app/pages/react-highlight-updates';
+import MaterialUI from './app/pages/material-ui';
+import ReactFastclick from './app/pages/react-fastclick';
+import SimplePatch from './app/pages/simple-patch';
+import Llamify from './app/pages/llamify';
+import Scramble from './app/pages/scramble';
+import Internationalization from './app/pages/internationalization';
 
 export default [
   {
@@ -15,41 +23,41 @@ export default [
   {
     path: '/why-react-create-element/',
     name: 'Why React?',
-    component: 'div'
+    component: ReactCreateElement
   },
   {
     path: '/react-highlight-updates/',
     name: 'React highlight updates',
-    component: 'div'
+    component: ReactHighlightUpdates
   },
   {
     path: '/material-ui-button-effect/',
     name: 'Material UI button effect',
-    component: 'div'
+    component: MaterialUI
   },
   {
     path: '/react-fastclick/',
     name: 'React fastclick',
-    component: 'div'
+    component: ReactFastclick
   },
   {
     path: '/simple-patch-function/',
     name: 'Simple patch function',
-    component: 'div'
+    component: SimplePatch
   },
   {
     path: '/llamify/',
     name: 'Llamify',
-    component: 'div'
+    component: Llamify
   },
   {
     path: '/scramble/',
     name: 'Scramble',
-    component: 'div'
+    component: Scramble
   },
   {
     path: '/internationalization/',
     name: 'Internationalization',
-    component: 'div'
+    component: Internationalization
   }
 ];

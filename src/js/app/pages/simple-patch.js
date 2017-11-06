@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default class MonkeyPatching extends React.PureComponent {
+export default class SimplePatch extends React.PureComponent {
   render () {
     return (
       <div>
-        Intro
+        Simple patch
       </div>
     );
   }
