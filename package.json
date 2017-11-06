@@ -43,7 +43,8 @@
     "random-seed": "0.3.0",
     "react": "16.0.0",
     "react-dom": "16.0.0",
-    "react-router-dom": "4.2.2"
+    "react-router-dom": "4.2.2",
+    "uglify-js": "3.0.18"
   },
   "devDependencies": {
     "concurrently": "3.5.0",
