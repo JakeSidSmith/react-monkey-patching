@@ -1,217 +1,583 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App should match snapshot 1`] = `
-<div>
-  <p>
-    Hello, World!
-  </p>
-  <p>
-    String class
-  </p>
-  <p>
-    Array
-    class
-  </p>
-  <p>
-    String SFC
-  </p>
-  <p>
-    Array
-    SFC
-  </p>
-  <p>
-    <input
-      type="submit"
-      value="Input type = submit"
-    />
-  </p>
-  <p>
-    <input
-      type="button"
-      value="Input type = button"
-    />
-  </p>
-  <p>
-    <input
-      onChange={[Function]}
-      placeholder="Input type = text placeholder"
-      type="text"
-      value=""
-    />
-  </p>
-  <p>
-    <img
-      alt="Alt text"
-    />
-  </p>
-  <p>
-    <a
-      href="#"
-      title="Link title"
-    >
-      Link with title
-    </a>
-  </p>
-  <p>
-    Alt number
-    <img
-      alt={1}
-    />
-  </p>
-  <p>
-    <a
-      href="#"
-      title={1}
-    >
-      Link with title that's a number
-    </a>
-  </p>
-  <p>
-    Short word that doesn't need scrambling: "hi"
-  </p>
-</div>
+<table
+  className="app"
+>
+  <tbody>
+    <tr>
+      <td
+        className="navigation"
+      >
+        <div
+          className="scrollable"
+        >
+          <ul>
+            <li>
+              <a
+                href="#/"
+                onClick={[Function]}
+              >
+                Intro
+              </a>
+            </li>
+            <li>
+              <a
+                href="#/what-is-monkey-patching/"
+                onClick={[Function]}
+              >
+                What is monkey patching?
+              </a>
+            </li>
+            <li>
+              <a
+                href="#/why-react-create-element/"
+                onClick={[Function]}
+              >
+                Why React?
+              </a>
+            </li>
+            <li>
+              <a
+                href="#/react-highlight-updates/"
+                onClick={[Function]}
+              >
+                React highlight updates
+              </a>
+            </li>
+            <li>
+              <a
+                href="#/material-ui-button-effect/"
+                onClick={[Function]}
+              >
+                Material UI button effect
+              </a>
+            </li>
+            <li>
+              <a
+                href="#/react-fastclick/"
+                onClick={[Function]}
+              >
+                React fastclick
+              </a>
+            </li>
+            <li>
+              <a
+                href="#/simple-patch-function/"
+                onClick={[Function]}
+              >
+                Simple patch function
+              </a>
+            </li>
+            <li>
+              <a
+                href="#/llamify/"
+                onClick={[Function]}
+              >
+                Llamify
+              </a>
+            </li>
+            <li>
+              <a
+                href="#/scramble/"
+                onClick={[Function]}
+              >
+                Scramble
+              </a>
+            </li>
+            <li>
+              <a
+                href="#/internationalization/"
+                onClick={[Function]}
+              >
+                Internationalization
+              </a>
+            </li>
+          </ul>
+        </div>
+      </td>
+      <td
+        className="main"
+      >
+        <div>
+          <h1
+            className="page-title"
+          >
+            Intro
+          </h1>
+          <div
+            className="scrollable"
+          >
+            <div
+              className="container"
+            >
+              <div
+                className="vertical-center"
+              >
+                <div>
+                  <h2>
+                    Monkey Patching React
+                  </h2>
+                  <p>
+                    Hello! My name is Jake, and today I'm going to show you some totally not hacks at all, believe me, I promise, really not hacks... awesome monkey patching of React.
+                  </p>
+                  <h2>
+                    Want more awesome stuff?
+                  </h2>
+                  <p>
+                    Here's some links you might enjoy:
+                  </p>
+                  <ul>
+                    <li>
+                      <a
+                        href="https://jakesidsmith.github.io/react-monkey-patching/"
+                        target="_blank"
+                        title="This demo"
+                      >
+                        This demo - jakesidsmith.github.io/react-monkey-patching/
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="http://jakesidsmith.com"
+                        target="_blank"
+                        title="My Blog"
+                      >
+                        My Blog - jakesidsmith.com
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://github.com/jakesidsmith/"
+                        target="_blank"
+                        title="My GitHub"
+                      >
+                        My GitHub - github.com/jakesidsmith/
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://twitter.com/jakesidsmith/"
+                        target="_blank"
+                        title="My Twitter"
+                      >
+                        My Twitter - twitter.com/jakesidsmith/
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.npmjs.com/package/react-highlight-updates"
+                        target="_blank"
+                        title="React Highlight Updates"
+                      >
+                        React Highlight Updates (we'll cover this shortly) - npmjs.com/package/react-highlight-updates
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.npmjs.com/package/react-fastclick"
+                        target="_blank"
+                        title="React Fastclick"
+                      >
+                        React Fastclick (we'll cover this briefly also) - npmjs.com/package/react-fastclick
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
 `;
 
 exports[`App should match snapshot when llamified 1`] = `
-<div>
-  <p>
-    Llama, Llama!
-  </p>
-  <p>
-    Llama llama
-  </p>
-  <p>
-    Llama
-    llama
-  </p>
-  <p>
-    Llama LLAMA
-  </p>
-  <p>
-    Llama
-    LLAMA
-  </p>
-  <p>
-    <input
-      type="submit"
-      value="Llama llama = llama"
-    />
-  </p>
-  <p>
-    <input
-      type="button"
-      value="Llama llama = llama"
-    />
-  </p>
-  <p>
-    <input
-      onChange={[Function]}
-      placeholder="Llama llama = llama llama"
-      type="text"
-      value=""
-    />
-  </p>
-  <p>
-    <img
-      alt="Llama llama"
-    />
-  </p>
-  <p>
-    <a
-      href="#"
-      title="Llama llama"
-    >
-      Llama llama llama
-    </a>
-  </p>
-  <p>
-    Llama llama
-    <img
-      alt={1}
-    />
-  </p>
-  <p>
-    <a
-      href="#"
-      title={1}
-    >
-      Llama llama llama llama'llama llama llama
-    </a>
-  </p>
-  <p>
-    Llama llama llama llama'llama llama llama: "llama"
-  </p>
-</div>
+<table
+  className="app"
+>
+  <tbody>
+    <tr>
+      <td
+        className="navigation"
+      >
+        <div
+          className="scrollable"
+        >
+          <ul>
+            <li>
+              <a
+                href="#/"
+                onClick={[Function]}
+              >
+                Llama
+              </a>
+            </li>
+            <li>
+              <a
+                href="#/what-is-monkey-patching/"
+                onClick={[Function]}
+              >
+                Llama llama llama llama?
+              </a>
+            </li>
+            <li>
+              <a
+                href="#/why-react-create-element/"
+                onClick={[Function]}
+              >
+                Llama Llama?
+              </a>
+            </li>
+            <li>
+              <a
+                href="#/react-highlight-updates/"
+                onClick={[Function]}
+              >
+                Llama llama llama
+              </a>
+            </li>
+            <li>
+              <a
+                href="#/material-ui-button-effect/"
+                onClick={[Function]}
+              >
+                Llama LLAMA llama llama
+              </a>
+            </li>
+            <li>
+              <a
+                href="#/react-fastclick/"
+                onClick={[Function]}
+              >
+                Llama llama
+              </a>
+            </li>
+            <li>
+              <a
+                href="#/simple-patch-function/"
+                onClick={[Function]}
+              >
+                Llama llama llama
+              </a>
+            </li>
+            <li>
+              <a
+                href="#/llamify/"
+                onClick={[Function]}
+              >
+                Llama
+              </a>
+            </li>
+            <li>
+              <a
+                href="#/scramble/"
+                onClick={[Function]}
+              >
+                Llama
+              </a>
+            </li>
+            <li>
+              <a
+                href="#/internationalization/"
+                onClick={[Function]}
+              >
+                Llama
+              </a>
+            </li>
+          </ul>
+        </div>
+      </td>
+      <td
+        className="main"
+      >
+        <div>
+          <h1
+            className="page-title"
+          >
+            Llama
+          </h1>
+          <div
+            className="scrollable"
+          >
+            <div
+              className="container"
+            >
+              <div
+                className="vertical-center"
+              >
+                <div>
+                  <h2>
+                    Llama Llama Llama
+                  </h2>
+                  <p>
+                    Llama! Llama llama llama Llama, llama llama LLAMA'llama llama llama llama llama llama llama llama llama llama llama, llama llama, LLAMA llama, llama llama llama... llama llama llama llama Llama.
+                  </p>
+                  <h2>
+                    Llama llama llama llama?
+                  </h2>
+                  <p>
+                    Llama'llama llama llama llama llama llama:
+                  </p>
+                  <ul>
+                    <li>
+                      <a
+                        href="https://jakesidsmith.github.io/react-monkey-patching/"
+                        target="_blank"
+                        title="Llama llama"
+                      >
+                        Llama llama - llama.llama.llama/llama-llama-llama/
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="http://jakesidsmith.com"
+                        target="_blank"
+                        title="Llama Llama"
+                      >
+                        Llama Llama - llama.llama
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://github.com/jakesidsmith/"
+                        target="_blank"
+                        title="Llama Llama"
+                      >
+                        Llama Llama - llama.llama/llama/
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://twitter.com/jakesidsmith/"
+                        target="_blank"
+                        title="Llama Llama"
+                      >
+                        Llama Llama - llama.llama/llama/
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.npmjs.com/package/react-highlight-updates"
+                        target="_blank"
+                        title="Llama Llama Llama"
+                      >
+                        Llama Llama Llama (llama'llama llama llama llama) - llama.llama/llama/llama-llama-llama
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.npmjs.com/package/react-fastclick"
+                        target="_blank"
+                        title="Llama Llama"
+                      >
+                        Llama Llama (llama'llama llama llama llama llama) - llama.llama/llama/llama-llama
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
 `;
 
 exports[`App should match snapshot when scrambled 1`] = `
-<div>
-  <p>
-    Hello, World!
-  </p>
-  <p>
-    Llama llama
-  </p>
-  <p>
-    Llama
-    llama
-  </p>
-  <p>
-    Stinrg SFC
-  </p>
-  <p>
-    Array
-    SFC
-  </p>
-  <p>
-    <input
-      type="submit"
-      value="Ipunt type = sbimut"
-    />
-  </p>
-  <p>
-    <input
-      type="button"
-      value="Inupt type = button"
-    />
-  </p>
-  <p>
-    <input
-      onChange={[Function]}
-      placeholder="Ipunt type = text pcholleedar"
-      type="text"
-      value=""
-    />
-  </p>
-  <p>
-    <img
-      alt="Alt text"
-    />
-  </p>
-  <p>
-    <a
-      href="#"
-      title="Lnik ttile"
-    >
-      Lnik with tlite
-    </a>
-  </p>
-  <p>
-    Alt nbmeur
-    <img
-      alt={1}
-    />
-  </p>
-  <p>
-    <a
-      href="#"
-      title={1}
-    >
-      Lnik with title that's a nmbeur
-    </a>
-  </p>
-  <p>
-    Sohrt word taht dseon't need salbmicnrg: "hi"
-  </p>
-</div>
+<table
+  className="app"
+>
+  <tbody>
+    <tr>
+      <td
+        className="navigation"
+      >
+        <div
+          className="scrollable"
+        >
+          <ul>
+            <li>
+              <a
+                href="#/"
+                onClick={[Function]}
+              >
+                Inrto
+              </a>
+            </li>
+            <li>
+              <a
+                href="#/what-is-monkey-patching/"
+                onClick={[Function]}
+              >
+                Waht is moenky phcitang?
+              </a>
+            </li>
+            <li>
+              <a
+                href="#/why-react-create-element/"
+                onClick={[Function]}
+              >
+                Why Recat?
+              </a>
+            </li>
+            <li>
+              <a
+                href="#/react-highlight-updates/"
+                onClick={[Function]}
+              >
+                Rcaet hghigilht uadepts
+              </a>
+            </li>
+            <li>
+              <a
+                href="#/material-ui-button-effect/"
+                onClick={[Function]}
+              >
+                Meriaatl UI bttoun efcfet
+              </a>
+            </li>
+            <li>
+              <a
+                href="#/react-fastclick/"
+                onClick={[Function]}
+              >
+                Rceat faticlcsk
+              </a>
+            </li>
+            <li>
+              <a
+                href="#/simple-patch-function/"
+                onClick={[Function]}
+              >
+                Simlpe patch futcoinn
+              </a>
+            </li>
+            <li>
+              <a
+                href="#/llamify/"
+                onClick={[Function]}
+              >
+                Llmfaiy
+              </a>
+            </li>
+            <li>
+              <a
+                href="#/scramble/"
+                onClick={[Function]}
+              >
+                Scrlabme
+              </a>
+            </li>
+            <li>
+              <a
+                href="#/internationalization/"
+                onClick={[Function]}
+              >
+                Inantienootltiaarzin
+              </a>
+            </li>
+          </ul>
+        </div>
+      </td>
+      <td
+        className="main"
+      >
+        <div>
+          <h1
+            className="page-title"
+          >
+            Intro
+          </h1>
+          <div
+            className="scrollable"
+          >
+            <div
+              className="container"
+            >
+              <div
+                className="vertical-center"
+              >
+                <div>
+                  <h2>
+                    Mokeny Pichtang Raect
+                  </h2>
+                  <p>
+                    Hlleo! My name is Jake, and today I'm going to sohw you some ttaolly not hakcs at all, beivele me, I poimsre, really not hakcs... aeosmwe mkneoy pthnacig of Rceat.
+                  </p>
+                  <h2>
+                    Wnat more aomsewe sutff?
+                  </h2>
+                  <p>
+                    Hree's some lknis you mghit ejony:
+                  </p>
+                  <ul>
+                    <li>
+                      <a
+                        href="https://jakesidsmith.github.io/react-monkey-patching/"
+                        target="_blank"
+                        title="This dmeo"
+                      >
+                        This dmeo - jsdaitmseikh.gtuhib.io/recat-mnokey-pnhaticg/
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="http://jakesidsmith.com"
+                        target="_blank"
+                        title="My Bolg"
+                      >
+                        My Blog - jaeksisdmtih.com
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://github.com/jakesidsmith/"
+                        target="_blank"
+                        title="My GHtuib"
+                      >
+                        My GutiHb - gthiub.com/jkeadsmiisth/
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://twitter.com/jakesidsmith/"
+                        target="_blank"
+                        title="My Titwter"
+                      >
+                        My Ttiwetr - tewittr.com/jsesdmaiitkh/
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.npmjs.com/package/react-highlight-updates"
+                        target="_blank"
+                        title="React Hgilihhgt Uatedps"
+                      >
+                        Rcaet Hihigglht Utpdeas (we'll cveor this srtlhoy) - npmjs.com/pcakage/rceat-hiighlhgt-utedpas
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.npmjs.com/package/react-fastclick"
+                        target="_blank"
+                        title="Rcaet Fstclaick"
+                      >
+                        Raect Fltsciack (we'll cover tihs biefrly also) - njmps.com/pkacage/raect-fascctlik
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
 `;
