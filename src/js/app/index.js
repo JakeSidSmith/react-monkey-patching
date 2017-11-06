@@ -1,6 +1,8 @@
 import React, { PureComponent } from 'react';
 import { HashRouter, Route } from 'react-router-dom';
 import Navigation from './navigation';
+import PageTitle from './pages/page-title';
+import routes from '../routes';
 
 class StringClass extends PureComponent {
   render () {
@@ -29,9 +31,6 @@ const ArraySFC = () => (
     'SFC'
   ]
 );
-
-const Home = () => <div>Home</div>;
-const Intro = () => <div>Intro</div>;
 
 export default class App extends PureComponent {
   constructor (props) {
@@ -62,8 +61,21 @@ export default class App extends PureComponent {
                 <Navigation />
               </td>
               <td className="main">
-                <Route exact path="/" component={Home} />
-                <Route exact path="/monkey-patching/" component={Intro} />
+                {routes.map(({path, name, component: PageComponent}) => (
+                  <Route
+                    exact
+                    key={path}
+                    path={path}
+                    render={() => ( // eslint-disable-line react/jsx-no-bind
+                      <div>
+                        <PageTitle>
+                          {name}
+                        </PageTitle>
+                        <PageComponent />
+                      </div>
+                    )}
+                  />
+                ))}
                 <div>
                   <p>
                     Hello, World!
