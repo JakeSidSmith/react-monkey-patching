@@ -1,5 +1,8 @@
 import React from 'react';
 
+const patchedClasses = [];
+const patchedMethods = [];
+
 export const patch = (transform) => {
   const originalCreateElement = React.createElement;
 
@@ -36,15 +39,16 @@ export const patch = (transform) => {
         element.prototype instanceof React.Component &&
         typeof element.prototype.render === 'function'
       ) {
-        if (!element.prototype.render.__patched) {
+        if (patchedClasses.indexOf(element) < 0) {
           const originalRender = element.prototype.render;
+
+          patchedClasses.push(element);
+          patchedMethods.push(originalRender);
 
           element.prototype.render = function render () {
             const renderArgs = Array.prototype.slice.call(arguments);
             return transformPossibleArrays(originalRender.apply(this, renderArgs));
           };
-
-          element.prototype.render.__patched = true;
         }
       } else {
         const originalElement = element;
@@ -81,5 +85,11 @@ export const patch = (transform) => {
 
   return () => {
     React.createElement = originalCreateElement;
+
+    while (patchedClasses.length) {
+      const patchedClass = patchedClasses.shift();
+      console.log(patchedClass, patchedClasses);
+      patchedClass.prototype.render = patchedMethods.shift();
+    }
   };
 };
