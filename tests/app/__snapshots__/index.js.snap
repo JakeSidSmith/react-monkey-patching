@@ -15,6 +15,7 @@ exports[`App should match snapshot 1`] = `
           <ul>
             <li>
               <a
+                data-no-patch={true}
                 href="#/"
                 onClick={[Function]}
               >
@@ -23,6 +24,7 @@ exports[`App should match snapshot 1`] = `
             </li>
             <li>
               <a
+                data-no-patch={true}
                 href="#/what-is-monkey-patching/"
                 onClick={[Function]}
               >
@@ -31,6 +33,7 @@ exports[`App should match snapshot 1`] = `
             </li>
             <li>
               <a
+                data-no-patch={true}
                 href="#/why-react-create-element/"
                 onClick={[Function]}
               >
@@ -39,6 +42,7 @@ exports[`App should match snapshot 1`] = `
             </li>
             <li>
               <a
+                data-no-patch={true}
                 href="#/react-highlight-updates/"
                 onClick={[Function]}
               >
@@ -47,6 +51,7 @@ exports[`App should match snapshot 1`] = `
             </li>
             <li>
               <a
+                data-no-patch={true}
                 href="#/material-ui-button-effect/"
                 onClick={[Function]}
               >
@@ -55,6 +60,7 @@ exports[`App should match snapshot 1`] = `
             </li>
             <li>
               <a
+                data-no-patch={true}
                 href="#/react-fastclick/"
                 onClick={[Function]}
               >
@@ -63,6 +69,7 @@ exports[`App should match snapshot 1`] = `
             </li>
             <li>
               <a
+                data-no-patch={true}
                 href="#/simple-patch-function/"
                 onClick={[Function]}
               >
@@ -71,6 +78,7 @@ exports[`App should match snapshot 1`] = `
             </li>
             <li>
               <a
+                data-no-patch={true}
                 href="#/llamify/"
                 onClick={[Function]}
               >
@@ -79,6 +87,7 @@ exports[`App should match snapshot 1`] = `
             </li>
             <li>
               <a
+                data-no-patch={true}
                 href="#/scramble/"
                 onClick={[Function]}
               >
@@ -87,11 +96,21 @@ exports[`App should match snapshot 1`] = `
             </li>
             <li>
               <a
+                data-no-patch={true}
                 href="#/internationalization/"
                 onClick={[Function]}
               >
                 Internationalization
               </a>
+            </li>
+            <li>
+              <button
+                className="remove-button"
+                data-no-patch={true}
+                onClick={[Function]}
+              >
+                Remove monkey patch.
+              </button>
             </li>
           </ul>
         </div>
@@ -102,6 +121,7 @@ exports[`App should match snapshot 1`] = `
         <div>
           <h1
             className="page-title"
+            data-no-patch={true}
           >
             Intro
           </h1>
@@ -209,83 +229,102 @@ exports[`App should match snapshot when llamified 1`] = `
           <ul>
             <li>
               <a
+                data-no-patch={true}
                 href="#/"
                 onClick={[Function]}
               >
-                Llama
+                Intro
               </a>
             </li>
             <li>
               <a
+                data-no-patch={true}
                 href="#/what-is-monkey-patching/"
                 onClick={[Function]}
               >
-                Llama llama llama llama?
+                What is monkey patching?
               </a>
             </li>
             <li>
               <a
+                data-no-patch={true}
                 href="#/why-react-create-element/"
                 onClick={[Function]}
               >
-                Llama Llama?
+                Why React?
               </a>
             </li>
             <li>
               <a
+                data-no-patch={true}
                 href="#/react-highlight-updates/"
                 onClick={[Function]}
               >
-                Llama llama llama
+                React highlight updates
               </a>
             </li>
             <li>
               <a
+                data-no-patch={true}
                 href="#/material-ui-button-effect/"
                 onClick={[Function]}
               >
-                Llama LLAMA llama llama
+                Material UI button effect
               </a>
             </li>
             <li>
               <a
+                data-no-patch={true}
                 href="#/react-fastclick/"
                 onClick={[Function]}
               >
-                Llama llama
+                React fastclick
               </a>
             </li>
             <li>
               <a
+                data-no-patch={true}
                 href="#/simple-patch-function/"
                 onClick={[Function]}
               >
-                Llama llama llama
+                Simple patch function
               </a>
             </li>
             <li>
               <a
+                data-no-patch={true}
                 href="#/llamify/"
                 onClick={[Function]}
               >
-                Llama
+                Llamify
               </a>
             </li>
             <li>
               <a
+                data-no-patch={true}
                 href="#/scramble/"
                 onClick={[Function]}
               >
-                Llama
+                Scramble
               </a>
             </li>
             <li>
               <a
+                data-no-patch={true}
                 href="#/internationalization/"
                 onClick={[Function]}
               >
-                Llama
+                Internationalization
               </a>
+            </li>
+            <li>
+              <button
+                className="remove-button"
+                data-no-patch={true}
+                onClick={[Function]}
+              >
+                Remove monkey patch.
+              </button>
             </li>
           </ul>
         </div>
@@ -296,8 +335,9 @@ exports[`App should match snapshot when llamified 1`] = `
         <div>
           <h1
             className="page-title"
+            data-no-patch={true}
           >
-            Llama
+            Intro
           </h1>
           <div
             className="scrollable"
@@ -403,83 +443,102 @@ exports[`App should match snapshot when scrambled 1`] = `
           <ul>
             <li>
               <a
+                data-no-patch={true}
                 href="#/"
                 onClick={[Function]}
               >
-                Inrto
+                Intro
               </a>
             </li>
             <li>
               <a
+                data-no-patch={true}
                 href="#/what-is-monkey-patching/"
                 onClick={[Function]}
               >
-                Waht is moenky phcitang?
+                What is monkey patching?
               </a>
             </li>
             <li>
               <a
+                data-no-patch={true}
                 href="#/why-react-create-element/"
                 onClick={[Function]}
               >
-                Why Recat?
+                Why React?
               </a>
             </li>
             <li>
               <a
+                data-no-patch={true}
                 href="#/react-highlight-updates/"
                 onClick={[Function]}
               >
-                Rcaet hghigilht uadepts
+                React highlight updates
               </a>
             </li>
             <li>
               <a
+                data-no-patch={true}
                 href="#/material-ui-button-effect/"
                 onClick={[Function]}
               >
-                Meriaatl UI bttoun efcfet
+                Material UI button effect
               </a>
             </li>
             <li>
               <a
+                data-no-patch={true}
                 href="#/react-fastclick/"
                 onClick={[Function]}
               >
-                Rceat faticlcsk
+                React fastclick
               </a>
             </li>
             <li>
               <a
+                data-no-patch={true}
                 href="#/simple-patch-function/"
                 onClick={[Function]}
               >
-                Simlpe patch futcoinn
+                Simple patch function
               </a>
             </li>
             <li>
               <a
+                data-no-patch={true}
                 href="#/llamify/"
                 onClick={[Function]}
               >
-                Llmfaiy
+                Llamify
               </a>
             </li>
             <li>
               <a
+                data-no-patch={true}
                 href="#/scramble/"
                 onClick={[Function]}
               >
-                Scrlabme
+                Scramble
               </a>
             </li>
             <li>
               <a
+                data-no-patch={true}
                 href="#/internationalization/"
                 onClick={[Function]}
               >
-                Inantienootltiaarzin
+                Internationalization
               </a>
+            </li>
+            <li>
+              <button
+                className="remove-button"
+                data-no-patch={true}
+                onClick={[Function]}
+              >
+                Remove monkey patch.
+              </button>
             </li>
           </ul>
         </div>
@@ -490,6 +549,7 @@ exports[`App should match snapshot when scrambled 1`] = `
         <div>
           <h1
             className="page-title"
+            data-no-patch={true}
           >
             Intro
           </h1>
@@ -504,70 +564,70 @@ exports[`App should match snapshot when scrambled 1`] = `
               >
                 <div>
                   <h2>
-                    Mokeny Pichtang Raect
+                    Mokeny Pnthaicg Raect
                   </h2>
                   <p>
-                    Hlleo! My name is Jake, and today I'm going to sohw you some ttaolly not hakcs at all, beivele me, I poimsre, really not hakcs... aeosmwe mkneoy pthnacig of Rceat.
+                    Hlleo! My name is Jake, and tdaoy I'm giong to show you smoe toaltly not hkcas at all, bilveee me, I pmroise, rlleay not hkacs... aowesme mneoky pahcitng of React.
                   </p>
                   <h2>
-                    Wnat more aomsewe sutff?
+                    Wnat mroe aweomse sfutf?
                   </h2>
                   <p>
-                    Hree's some lknis you mghit ejony:
+                    Hree's some lkins you mihgt eonjy:
                   </p>
                   <ul>
                     <li>
                       <a
                         href="https://jakesidsmith.github.io/react-monkey-patching/"
                         target="_blank"
-                        title="This dmeo"
+                        title="Tihs demo"
                       >
-                        This dmeo - jsdaitmseikh.gtuhib.io/recat-mnokey-pnhaticg/
+                        This dmeo - jasemktiisdh.guihtb.io/rcaet-moneky-pahticng/
                       </a>
                     </li>
                     <li>
                       <a
                         href="http://jakesidsmith.com"
                         target="_blank"
-                        title="My Bolg"
+                        title="My Blog"
                       >
-                        My Blog - jaeksisdmtih.com
+                        My Bolg - jksetdsimiah.com
                       </a>
                     </li>
                     <li>
                       <a
                         href="https://github.com/jakesidsmith/"
                         target="_blank"
-                        title="My GHtuib"
+                        title="My GuitHb"
                       >
-                        My GutiHb - gthiub.com/jkeadsmiisth/
+                        My GiHutb - gihtub.com/jmiesktaidsh/
                       </a>
                     </li>
                     <li>
                       <a
                         href="https://twitter.com/jakesidsmith/"
                         target="_blank"
-                        title="My Titwter"
+                        title="My Ttwetir"
                       >
-                        My Ttiwetr - tewittr.com/jsesdmaiitkh/
+                        My Tittewr - twitetr.com/jiiaskdmetsh/
                       </a>
                     </li>
                     <li>
                       <a
                         href="https://www.npmjs.com/package/react-highlight-updates"
                         target="_blank"
-                        title="React Hgilihhgt Uatedps"
+                        title="Raect Hghighilt Udapets"
                       >
-                        Rcaet Hihigglht Utpdeas (we'll cveor this srtlhoy) - npmjs.com/pcakage/rceat-hiighlhgt-utedpas
+                        React Hhiilghgt Ueptdas (we'll cveor this srhltoy) - npmjs.com/pacgkae/react-hhihigglt-uatpdes
                       </a>
                     </li>
                     <li>
                       <a
                         href="https://www.npmjs.com/package/react-fastclick"
                         target="_blank"
-                        title="Rcaet Fstclaick"
+                        title="Racet Fscltaick"
                       >
-                        Raect Fltsciack (we'll cover tihs biefrly also) - njmps.com/pkacage/raect-fascctlik
+                        Racet Fscilatck (we'll cover this brleify aslo) - nmpjs.com/pkcaage/rceat-ftccalisk
                       </a>
                     </li>
                   </ul>

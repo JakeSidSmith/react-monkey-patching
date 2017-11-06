@@ -2,6 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 
 import App from '../../src/js/app/';
+import { applyPatch } from '../../src/js/monkey-patches/patch-control';
 
 describe('App', () => {
 
@@ -16,13 +17,13 @@ describe('App', () => {
   });
 
   it('should match snapshot when llamified', () => {
-    require('../../src/js/monkey-patches/llamify');
+    applyPatch('llamify');
 
     expect(renderer.create(<App />)).toMatchSnapshot();
   });
 
   it('should match snapshot when scrambled', () => {
-    require('../../src/js/monkey-patches/scramble');
+    applyPatch('scramble');
 
     expect(renderer.create(<App />)).toMatchSnapshot();
   });
