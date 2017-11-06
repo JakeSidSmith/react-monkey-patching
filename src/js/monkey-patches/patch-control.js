@@ -16,6 +16,12 @@ export const subscribe = (callback) => {
   };
 };
 
+const updateComponents = () => {
+  subscriptions.forEach((callback) => {
+    callback();
+  });
+};
+
 const PATCHES = {
   llamify
 };
@@ -26,6 +32,8 @@ export const removePatch = () => {
   if (typeof unpatch === 'function') {
     unpatch();
   }
+
+  updateComponents();
 };
 
 export const applyPatch = (name) => {
@@ -35,8 +43,5 @@ export const applyPatch = (name) => {
   }
 
   unpatch = PATCHES[name]();
-
-  subscriptions.forEach((callback) => {
-    callback();
-  });
+  updateComponents();
 };

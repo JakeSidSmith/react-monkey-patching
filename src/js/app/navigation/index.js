@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import routes from '../../routes';
+import RemoveButton from '../remove-button';
 import PatchableComponent from '../../monkey-patches/patchable-component';
 
 export default class Navigation extends PatchableComponent {
@@ -14,6 +15,9 @@ export default class Navigation extends PatchableComponent {
             </Link>
           </li>
         ))}
+        <li>
+          <RemoveButton />
+        </li>
       </ul>
     );
   }

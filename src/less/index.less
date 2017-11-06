@@ -10,8 +10,10 @@
 @boder-color: #DDD;
 
 @apply-button-color: #FFF;
-@apply-button-background-color: #D43030;
+@apply-button-background-color: #29D77C;
 @apply-button-font-size: 20px;
+
+@remove-button-background-color: #D43030;
 
 * {
   box-sizing: border-box;
@@ -150,6 +152,7 @@ pre {
   }
 }
 
+.remove-button,
 .apply-button {
   appearance: none;
   display: block;
@@ -169,4 +172,10 @@ pre {
   &:active {
     box-shadow: inset 0 1px 5px 0 @shadow-color;
   }
+}
+
+.remove-button {
+  background-color: @remove-button-background-color;
+  padding: @padding-base / 2 @padding-base;
+  font-size: @font-size-base;
 }

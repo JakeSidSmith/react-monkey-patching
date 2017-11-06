@@ -78,4 +78,8 @@ export const patch = (transform) => {
 
     return originalCreateElement.apply(React, args);
   };
+
+  return () => {
+    React.createElement = originalCreateElement;
+  };
 };
