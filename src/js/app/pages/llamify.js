@@ -1,5 +1,5 @@
 import React from 'react';
-import { applyPatch } from '../../monkey-patches/patch-control';
+import ApplyButton from '../apply-button';
 import PatchableComponent from '../../monkey-patches/patchable-component';
 
 class StringClass extends PatchableComponent {
@@ -47,18 +47,12 @@ export default class Llamify extends PatchableComponent {
     });
   }
 
-  onApplyPatch () {
-    applyPatch('llamify');
-  }
-
   render () {
     const { value } = this.state;
 
     return (
       <div>
-        <button data-no-patch onClick={this.onApplyPatch}>
-          Apply monkey patch
-        </button>
+        <ApplyButton patch="llamify" />
         <p>
           Hello, World!
         </p>

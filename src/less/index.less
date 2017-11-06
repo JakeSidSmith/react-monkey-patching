@@ -9,6 +9,10 @@
 @code-background: #EFEFEF;
 @boder-color: #DDD;
 
+@apply-button-color: #FFF;
+@apply-button-background-color: #D43030;
+@apply-button-font-size: 20px;
+
 * {
   box-sizing: border-box;
 }
@@ -143,5 +147,26 @@ pre {
     li {
       padding: 0;
     }
+  }
+}
+
+.apply-button {
+  appearance: none;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  padding: @padding-base @padding-base * 2;
+  border-radius: 4px;
+  border: none;
+  font-size: @apply-button-font-size;
+  background-color: @apply-button-background-color;
+  color: @apply-button-color;
+
+  &:hover {
+    box-shadow: 0 1px 5px 0 @shadow-color;
+  }
+
+  &:active {
+    box-shadow: inset 0 1px 5px 0 @shadow-color;
   }
 }
