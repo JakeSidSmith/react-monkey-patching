@@ -40,6 +40,7 @@
     "less": "2.7.3",
     "postcss": "6.0.14",
     "postcss-cli": "4.1.1",
+    "raf": "3.4.0",
     "random-seed": "0.3.0",
     "react": "16.0.0",
     "react-dom": "16.0.0",
@@ -58,9 +59,15 @@
     "watchify": "3.9.0"
   },
   "jest": {
+    "setupFiles": [
+      "<rootDir>tests/helpers/setup.js"
+    ],
     "testMatch": [
       "**/(__tests__|tests)/**/*.js?(x)",
       "**/?(*.)(spec|test).js?(x)"
+    ],
+    "testPathIgnorePatterns": [
+      "tests/helpers/setup.js"
     ],
     "collectCoverageFrom": [
       "src/js/**/*.js"

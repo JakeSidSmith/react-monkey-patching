@@ -1,3 +1,7 @@
+import { polyfill as polyfillRaf } from 'raf';
+
+polyfillRaf();
+
 import './livereload';
 
 import React from 'react';
