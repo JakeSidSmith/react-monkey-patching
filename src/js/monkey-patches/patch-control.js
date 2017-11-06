@@ -1,9 +1,11 @@
 import llamify from './llamify';
 import scramble from './scramble';
+import highlightUpdates from './highlight-updates';
 
 const PATCHES = {
   llamify,
-  scramble
+  scramble,
+  highlightUpdates
 };
 
 const subscriptions = [];
