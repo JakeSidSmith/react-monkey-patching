@@ -16,6 +16,13 @@ export const patch = (transform) => {
   React.createElement = function createElement () {
     const args = Array.prototype.slice.call(arguments);
 
+    const element = args[0];
+    const props = args[1];
+
+    if (props && props['data-no-patch']) {
+      return originalCreateElement.apply(React, args);
+    }
+
     args.forEach((arg, i) => {
       if (i >= 2) {
         if (typeof arg === 'string') {
@@ -23,9 +30,6 @@ export const patch = (transform) => {
         }
       }
     });
-
-    const element = args[0];
-    const props = args[1];
 
     if (typeof element === 'function') {
       if (

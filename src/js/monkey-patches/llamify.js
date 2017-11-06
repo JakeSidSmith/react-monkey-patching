@@ -14,4 +14,4 @@ const llamify = (text) => {
   });
 };
 
-patch(llamify);
+export default () => patch(llamify);

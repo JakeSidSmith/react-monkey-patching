@@ -1,4 +1,5 @@
 import React from 'react';
+import applyPatch from '../../monkey-patches/apply-patch';
 
 class StringClass extends React.PureComponent {
   render () {
@@ -45,11 +46,18 @@ export default class Llamify extends React.PureComponent {
     });
   }
 
+  onApplyPatch () {
+    applyPatch('llamify');
+  }
+
   render () {
     const { value } = this.state;
 
     return (
       <div>
+        <button data-no-patch onClick={this.onApplyPatch}>
+          Apply monkey patch
+        </button>
         <p>
           Hello, World!
         </p>
