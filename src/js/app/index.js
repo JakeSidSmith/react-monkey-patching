@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import { HashRouter, Route } from 'react-router-dom';
+import Navigation from './navigation';
 
 class StringClass extends PureComponent {
   render () {
@@ -55,6 +56,7 @@ export default class App extends PureComponent {
     return (
       <HashRouter>
         <div>
+          <Navigation />
           <Route exact path="/" component={Home} />
           <Route exact path="/monkey-patching/" component={Intro} />
           <div>
