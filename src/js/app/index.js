@@ -3,6 +3,7 @@ import { HashRouter, Route } from 'react-router-dom';
 import Navigation from './navigation';
 import PageTitle from './page-title';
 import Scrollable from './scrollable';
+import Container from './container';
 import routes from '../routes';
 
 export default class App extends React.PureComponent {
@@ -29,7 +30,9 @@ export default class App extends React.PureComponent {
                           {name}
                         </PageTitle>
                         <Scrollable>
-                          <PageComponent />
+                          <Container>
+                            <PageComponent />
+                          </Container>
                         </Scrollable>
                       </div>
                     )}

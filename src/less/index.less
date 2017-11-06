@@ -31,6 +31,15 @@ table {
   border-spacing: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: @margin-base * 2 0;
+}
+
 .app {
   position: absolute;
   top: 0;
@@ -42,10 +51,6 @@ table {
   & > tbody > tr > td {
     position: relative;
     vertical-align: top;
-
-    &.main {
-      vertical-align: middle;
-    }
   }
 }
 
@@ -64,18 +69,35 @@ table {
   font-size: @title-font-size;
   line-height: 1;
   padding: @padding-base;
-  background: linear-gradient(@background-color, transparent);
+  background: linear-gradient(@background-color, 75%, transparent);
 }
 
 .scrollable {
   position: absolute;
+  display: table-cell;
+  vertical-align: middle;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
   z-index: 0;
-  padding: @padding-base;
+  padding: @padding-base * 2;
+}
+
+.container {
+  display: table;
+  table-layout: fixed;
+  postion: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+
+  .vertical-center {
+    display: table-cell;
+    vertical-align: middle;
+  }
 }
 
 .navigation {
@@ -83,6 +105,10 @@ table {
   box-shadow: 0 0 5px 0 @shadow-color;
   width: 220px;
   z-index: 2;
+
+  .scrollable {
+    padding: 0 @padding-base;
+  }
 
   ul {
     list-style: none;
