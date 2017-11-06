@@ -22,6 +22,12 @@ const PATCHES = {
 
 let unpatch;
 
+export const removePatch = () => {
+  if (typeof unpatch === 'function') {
+    unpatch();
+  }
+};
+
 export const applyPatch = (name) => {
   if (typeof unpatch === 'function') {
     unpatch();
