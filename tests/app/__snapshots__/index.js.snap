@@ -150,11 +150,11 @@ exports[`App should match snapshot 1`] = `
                   <ul>
                     <li>
                       <a
-                        href="https://jakesidsmith.github.io/react-monkey-patching/"
+                        href="https://github.com/JakeSidSmith/react-monkey-patching"
                         target="_blank"
                         title="This demo"
                       >
-                        This demo - jakesidsmith.github.io/react-monkey-patching/
+                        This demo - github.com/JakeSidSmith/react-monkey-patching
                       </a>
                     </li>
                     <li>
@@ -168,20 +168,20 @@ exports[`App should match snapshot 1`] = `
                     </li>
                     <li>
                       <a
-                        href="https://github.com/jakesidsmith/"
+                        href="https://github.com/jakesidsmith"
                         target="_blank"
                         title="My GitHub"
                       >
-                        My GitHub - github.com/jakesidsmith/
+                        My GitHub - github.com/jakesidsmith
                       </a>
                     </li>
                     <li>
                       <a
-                        href="https://twitter.com/jakesidsmith/"
+                        href="https://twitter.com/jakesidsmith"
                         target="_blank"
                         title="My Twitter"
                       >
-                        My Twitter - twitter.com/jakesidsmith/
+                        My Twitter - twitter.com/jakesidsmith
                       </a>
                     </li>
                     <li>
@@ -364,11 +364,11 @@ exports[`App should match snapshot when llamified 1`] = `
                   <ul>
                     <li>
                       <a
-                        href="https://jakesidsmith.github.io/react-monkey-patching/"
+                        href="https://github.com/JakeSidSmith/react-monkey-patching"
                         target="_blank"
                         title="Llama llama"
                       >
-                        Llama llama - llama.llama.llama/llama-llama-llama/
+                        Llama llama - llama.llama/Llama/llama-llama-llama
                       </a>
                     </li>
                     <li>
@@ -382,20 +382,20 @@ exports[`App should match snapshot when llamified 1`] = `
                     </li>
                     <li>
                       <a
-                        href="https://github.com/jakesidsmith/"
+                        href="https://github.com/jakesidsmith"
                         target="_blank"
                         title="Llama Llama"
                       >
-                        Llama Llama - llama.llama/llama/
+                        Llama Llama - llama.llama/llama
                       </a>
                     </li>
                     <li>
                       <a
-                        href="https://twitter.com/jakesidsmith/"
+                        href="https://twitter.com/jakesidsmith"
                         target="_blank"
                         title="Llama Llama"
                       >
-                        Llama Llama - llama.llama/llama/
+                        Llama Llama - llama.llama/llama
                       </a>
                     </li>
                     <li>
@@ -564,25 +564,25 @@ exports[`App should match snapshot when scrambled 1`] = `
               >
                 <div>
                   <h2>
-                    Mokeny Pnthaicg Raect
+                    Mokney Ptciahng Racet
                   </h2>
                   <p>
-                    Hlleo! My name is Jake, and tdaoy I'm giong to show you smoe toaltly not hkcas at all, bilveee me, I pmroise, rlleay not hkacs... aowesme mneoky pahcitng of React.
+                    Hello! My nmae is Jkae, and toady I'm gonig to show you some toatlly not hkcas at all, believe me, I pmrosie, ralley not hkcas... asewmoe mokney pcnaithg of Recat.
                   </p>
                   <h2>
-                    Wnat mroe aweomse sfutf?
+                    Wnat mroe aomeswe stuff?
                   </h2>
                   <p>
-                    Hree's some lkins you mihgt eonjy:
+                    Hree's smoe links you mhigt enojy:
                   </p>
                   <ul>
                     <li>
                       <a
-                        href="https://jakesidsmith.github.io/react-monkey-patching/"
+                        href="https://github.com/JakeSidSmith/react-monkey-patching"
                         target="_blank"
-                        title="Tihs demo"
+                        title="This demo"
                       >
-                        This dmeo - jasemktiisdh.guihtb.io/rcaet-moneky-pahticng/
+                        This dmeo - ghuitb.com/JaiSitkdSmeh/react-mkneoy-pthcnaig
                       </a>
                     </li>
                     <li>
@@ -591,43 +591,43 @@ exports[`App should match snapshot when scrambled 1`] = `
                         target="_blank"
                         title="My Blog"
                       >
-                        My Bolg - jksetdsimiah.com
+                        My Blog - jsedmitsikah.com
                       </a>
                     </li>
                     <li>
                       <a
-                        href="https://github.com/jakesidsmith/"
+                        href="https://github.com/jakesidsmith"
                         target="_blank"
-                        title="My GuitHb"
+                        title="My GiHtub"
                       >
-                        My GiHutb - gihtub.com/jmiesktaidsh/
+                        My GituHb - gtuihb.com/jiismdasketh
                       </a>
                     </li>
                     <li>
                       <a
-                        href="https://twitter.com/jakesidsmith/"
+                        href="https://twitter.com/jakesidsmith"
                         target="_blank"
-                        title="My Ttwetir"
+                        title="My Tiewttr"
                       >
-                        My Tittewr - twitetr.com/jiiaskdmetsh/
+                        My Ttetiwr - tetwtir.com/jseimtkidsah
                       </a>
                     </li>
                     <li>
                       <a
                         href="https://www.npmjs.com/package/react-highlight-updates"
                         target="_blank"
-                        title="Raect Hghighilt Udapets"
+                        title="React Hhiighglt Udtaeps"
                       >
-                        React Hhiilghgt Ueptdas (we'll cveor this srhltoy) - npmjs.com/pacgkae/react-hhihigglt-uatpdes
+                        Raect Hgihlhgit Uapedts (we'll ceovr tihs sohltry) - npmjs.com/pckaage/racet-hghiihglt-utedaps
                       </a>
                     </li>
                     <li>
                       <a
                         href="https://www.npmjs.com/package/react-fastclick"
                         target="_blank"
-                        title="Racet Fscltaick"
+                        title="React Factlcsik"
                       >
-                        Racet Fscilatck (we'll cover this brleify aslo) - nmpjs.com/pkcaage/rceat-ftccalisk
+                        Rcaet Fcatlcisk (we'll cvoer this briefly also) - njpms.com/package/racet-ftlaiccsk
                       </a>
                     </li>
                   </ul>
