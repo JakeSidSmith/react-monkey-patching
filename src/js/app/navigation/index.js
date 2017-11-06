@@ -10,7 +10,7 @@ export default class Navigation extends PatchableComponent {
       <ul>
         {routes.map(({path, name}) => (
           <li key={path}>
-            <Link data-no-patch to={path}>
+            <Link to={path}>
               {name}
             </Link>
           </li>
