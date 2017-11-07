@@ -70,29 +70,29 @@ export default class BasicElements extends PatchableComponent {
           <input type="button" value="Input type = button" />
         </p>
         <p>
-        <input
-          type="text"
-          placeholder="Input type = text placeholder"
-          value={value}
-          onChange={this.onChange}
-        />
+          <input
+            type="text"
+            placeholder="Input type = text placeholder"
+            value={value}
+            onChange={this.onChange}
+          />
         </p>
         <p>
-        <img alt="Alt text" />
+          <img alt="Alt text" />
         </p>
         <p>
-        <a href="#" title="Link title">
-          Link with title
-        </a>
+          <a href="#" title="Link title">
+            Link with title
+          </a>
         </p>
         <p>
-        Alt number
-        <img alt={1} />
+          Alt number
+          <img alt={1} />
         </p>
         <p>
-        <a href="#" title={1}>
-          Link with title that's a number
-        </a>
+          <a href="#" title={1}>
+            Link with title that's a number
+          </a>
         </p>
         <p>
           Short word that doesn't need scrambling: "hi"

@@ -73,7 +73,7 @@ class Increment extends PatchableComponent {
         Increment
       </button>
     );
-  };
+  }
 }
 
 export default class ReactHighlightUpdates extends PatchableComponent {

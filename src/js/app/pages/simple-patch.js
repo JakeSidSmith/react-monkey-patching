@@ -15,7 +15,7 @@ export default class SimplePatch extends PatchableComponent {
           Below is an incredibly cut down version of the kind of monkey patch that the following few examples use.
         </p>
         <pre>
-{`// Store the original function
+          {`// Store the original function
 const originalCreateElement = React.createElement;
 
 // Define a new function
