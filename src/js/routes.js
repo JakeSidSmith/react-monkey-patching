@@ -31,14 +31,14 @@ export default [
     component: ReactHighlightUpdates
   },
   {
-    path: '/material-ui-button-effect/',
-    name: 'Material UI button effect',
-    component: MaterialUI
-  },
-  {
     path: '/react-fastclick/',
     name: 'React fastclick',
     component: ReactFastclick
+  },
+  {
+    path: '/material-ui-button-effect/',
+    name: 'Material UI button effect',
+    component: MaterialUI
   },
   {
     path: '/simple-patch-function/',
