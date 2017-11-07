@@ -18,7 +18,11 @@ export default class ReactCreateElement extends PatchableComponent {
         <p>
           Hopefully you've written some JSX that looks like this before:
         </p>
-        <SyntaxHighlighter language="javascript" useInlineStyles={false}>
+        <SyntaxHighlighter
+          showLineNumbers
+          useInlineStyles={false}
+          language="javascript"
+        >
           {`<div className="my-div">
   Hello, World!
 </div>`}
@@ -32,7 +36,11 @@ export default class ReactCreateElement extends PatchableComponent {
         <p>
           Here's what the above JSX compiles down to:
         </p>
-        <SyntaxHighlighter language="javascript" useInlineStyles={false}>
+        <SyntaxHighlighter
+          showLineNumbers
+          useInlineStyles={false}
+          language="javascript"
+        >
           {'React.createElement(\'div\', {className: \'my-div\'}, \'Hello, World!\')'}
         </SyntaxHighlighter>
         <p>

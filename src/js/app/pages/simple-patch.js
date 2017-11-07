@@ -15,7 +15,11 @@ export default class SimplePatch extends PatchableComponent {
         <p>
           Below is an incredibly cut down version of the kind of monkey patch that the following few examples use.
         </p>
-        <SyntaxHighlighter language="javascript" useInlineStyles={false}>
+        <SyntaxHighlighter
+          showLineNumbers
+          useInlineStyles={false}
+          language="javascript"
+        >
           {`// Store the original function
 const originalCreateElement = React.createElement;
 
@@ -46,7 +50,11 @@ React.createElement = function () {
         <p>
           This also handles a lot more cases such as React 16's string / array components, and nested arrays.
         </p>
-        <SyntaxHighlighter language="javascript" useInlineStyles={false}>
+        <SyntaxHighlighter
+          showLineNumbers
+          useInlineStyles={false}
+          language="javascript"
+        >
           {complexExample}
         </SyntaxHighlighter>
       </div>
