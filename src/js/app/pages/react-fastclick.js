@@ -24,7 +24,10 @@ export default class ReactFastclick extends PatchableComponent {
           </a>) React Fastclick solved some issues that the existing solutions did not.
         </p>
         <p>
-          You can check it out on npm, but I may be deprecating it soon as it's very hard to keep up to date.
+          Unfortunately I don't have a demo of this here, but you can check it out on npm. I may, however, be
+          deprecating it soon as it's very hard to keep up to date due to new devices and changes to React.
+        </p>
+        <p>
           <a
             title="React Fastclick on npm"
             href="https://www.npmjs.com/package/react-fastclick"
