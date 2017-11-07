@@ -27,7 +27,7 @@ React.createElement = function () {
   // And transform them if they are strings
   args.forEach((arg, index) => {
     if (index >= 2 && typeof arg === 'string') {
-      args[index] = arg.replace(/\b\w+\b/gi, 'llama');
+      args[index] = arg.replace(/\\b\\w+\\b/gi, 'llama');
     }
   });
 
