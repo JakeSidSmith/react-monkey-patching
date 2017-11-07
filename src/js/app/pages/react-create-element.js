@@ -1,5 +1,6 @@
 import React from 'react';
 import PatchableComponent from '../../monkey-patches/patchable-component';
+import SyntaxHighlighter from 'react-syntax-highlighter';
 
 export default class ReactCreateElement extends PatchableComponent {
   render () {
@@ -17,11 +18,15 @@ export default class ReactCreateElement extends PatchableComponent {
         <p>
           Hopefully you've written some JSX that looks like this before:
         </p>
-        <pre>
+        <SyntaxHighlighter
+          showLineNumbers
+          useInlineStyles={false}
+          language="javascript"
+        >
           {`<div className="my-div">
   Hello, World!
 </div>`}
-        </pre>
+        </SyntaxHighlighter>
         <p>
           But you may not know that all of your JSX markup actually compiles down into one simple function.
         </p>
@@ -31,9 +36,13 @@ export default class ReactCreateElement extends PatchableComponent {
         <p>
           Here's what the above JSX compiles down to:
         </p>
-        <pre>
+        <SyntaxHighlighter
+          showLineNumbers
+          useInlineStyles={false}
+          language="javascript"
+        >
           {'React.createElement(\'div\', {className: \'my-div\'}, \'Hello, World!\')'}
-        </pre>
+        </SyntaxHighlighter>
         <p>
           It's because of this that it's so easy to monkey patch React and affect all of your components.
         </p>
