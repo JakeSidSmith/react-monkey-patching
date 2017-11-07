@@ -45,7 +45,7 @@ class Increment extends PatchableComponent {
     super(props);
 
     this.state = initialState;
-    this.increment = this.increment.bind(this);
+    this.onIncrement = this.onIncrement.bind(this);
     this.updateState = this.setState.bind(this);
   }
 
@@ -61,7 +61,7 @@ class Increment extends PatchableComponent {
     this.unsubscribe();
   }
 
-  increment () {
+  onIncrement () {
     const { count } = this.state;
 
     store.set('count', count + 1);
@@ -69,7 +69,7 @@ class Increment extends PatchableComponent {
 
   render () {
     return (
-      <button onClick={this.increment}>
+      <button onClick={this.onIncrement}>
         Increment
       </button>
     );
@@ -113,6 +113,10 @@ export default class ReactHighlightUpdates extends PatchableComponent {
         </p>
         <p>
           <Increment />
+        </p>
+        <p>
+          Notice clicking the above button only causes updates to the count component because it is connected
+          to a store, and is the sole subscriber.
         </p>
       </div>
     );
