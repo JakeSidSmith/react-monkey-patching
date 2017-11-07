@@ -1,6 +1,9 @@
 import React from 'react';
 import PatchableComponent from '../../monkey-patches/patchable-component';
 
+// eslint-disable-next-line no-undef
+const complexExample = require('fs').readFileSync(__dirname + '/../../monkey-patches/patch.js', 'utf8');
+
 export default class SimplePatch extends PatchableComponent {
   render () {
     return (
@@ -30,10 +33,19 @@ React.createElement = function () {
 
   // Apply args to the original function
   return originalCreateElement.apply(React, args);
-};
-
-`}
+};`}
         </pre>
+        <h2>
+          A complex example
+        </h2>
+        <p>
+          This is the code that the following few examples use. Unlike the above examples, it that takes a transform
+          function & returns an "unsubscribe" function that allows it to be un-patched.
+        </p>
+        <p>
+          This also handles a lot more cases such as React 16's string / array components, and nested arrays.
+        </p>
+        <pre>{complexExample}</pre>
       </div>
     );
   }

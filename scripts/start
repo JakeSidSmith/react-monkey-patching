@@ -13,6 +13,6 @@ concurrently --kill-others \
   --names='watch-less ,watch-js   ,livereload ,http-server' \
   --prefix-colors='cyan,red,magenta,green' \
   'watch-less-do-more -u autoprefixer -i src/less/index.less -o build/css/index.css' \
-  'LIVERELOAD=true watchify -d src/js/index.js -t babelify -t envify -o build/js/index.js -v' \
+  'LIVERELOAD=true watchify -d src/js/index.js -t babelify -t envify -t brfs -o build/js/index.js -v' \
   'livereload build/' \
   'http-server -c-0 build/ -o'
