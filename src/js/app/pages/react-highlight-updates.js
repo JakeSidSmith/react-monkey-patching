@@ -90,6 +90,8 @@ export default class ReactHighlightUpdates extends PatchableComponent {
         </p>
         <p>
           You can check it out on npm here:
+        </p>
+        <p>
           <a
             title="React Highlight Updates on npm"
             href="https://www.npmjs.com/package/react-highlight-updates"
@@ -102,8 +104,8 @@ export default class ReactHighlightUpdates extends PatchableComponent {
           What does it do?
         </h2>
         <p>
-          This package monkey patches components' `prototype.componentDidUpdate` method & applies an animation
-          to the elements background color.
+          This package monkey patches components' <code>prototype.componentDidUpdate</code> method & applies an
+          animation to the elements' background color.
         </p>
         <p>
           Press the "Apply monkey patch" button above to give it a go now.
