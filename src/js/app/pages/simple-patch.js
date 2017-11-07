@@ -39,7 +39,7 @@ React.createElement = function () {
           A complex example
         </h2>
         <p>
-          This is the code that the following few examples use. Unlike the above examples, it that takes a transform
+          This is the code for the following few examples. Unlike the above example, it takes a transform
           function & returns an "unsubscribe" function that allows it to be un-patched.
         </p>
         <p>
