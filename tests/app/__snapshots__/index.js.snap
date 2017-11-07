@@ -47,18 +47,18 @@ exports[`App should match snapshot 1`] = `
             </li>
             <li>
               <a
-                href="#/material-ui-button-effect/"
-                onClick={[Function]}
-              >
-                Material UI button effect
-              </a>
-            </li>
-            <li>
-              <a
                 href="#/react-fastclick/"
                 onClick={[Function]}
               >
                 React fastclick
+              </a>
+            </li>
+            <li>
+              <a
+                href="#/material-ui-button-effect/"
+                onClick={[Function]}
+              >
+                Material UI button effect
               </a>
             </li>
             <li>
@@ -250,18 +250,18 @@ exports[`App should match snapshot when llamified 1`] = `
             </li>
             <li>
               <a
-                href="#/material-ui-button-effect/"
-                onClick={[Function]}
-              >
-                Llama LLAMA llama llama
-              </a>
-            </li>
-            <li>
-              <a
                 href="#/react-fastclick/"
                 onClick={[Function]}
               >
                 Llama llama
+              </a>
+            </li>
+            <li>
+              <a
+                href="#/material-ui-button-effect/"
+                onClick={[Function]}
+              >
+                Llama LLAMA llama llama
               </a>
             </li>
             <li>
@@ -453,18 +453,18 @@ exports[`App should match snapshot when scrambled 1`] = `
             </li>
             <li>
               <a
-                href="#/material-ui-button-effect/"
+                href="#/react-fastclick/"
                 onClick={[Function]}
               >
-                Mrteaial UI botutn effcet
+                React ftscclaik
               </a>
             </li>
             <li>
               <a
-                href="#/react-fastclick/"
+                href="#/material-ui-button-effect/"
                 onClick={[Function]}
               >
-                Raect ftiaclsck
+                Mtriaael UI botutn ecefft
               </a>
             </li>
             <li>
