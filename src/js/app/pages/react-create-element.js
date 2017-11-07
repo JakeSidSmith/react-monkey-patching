@@ -39,7 +39,7 @@ export default class ReactCreateElement extends PatchableComponent {
         </p>
         <p>
           Additionally, unlike monkey patching <code>document.createElement</code>, we have already defined
-          all of our styles, event handlers, etc, so we can easily modify existing properties.
+          all of our elements' properties; styles, event handlers, etc, so we can easily modify existing properties.
         </p>
       </div>
     );
