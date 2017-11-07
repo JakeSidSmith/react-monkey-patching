@@ -1,5 +1,6 @@
 import React from 'react';
 import PatchableComponent from '../../monkey-patches/patchable-component';
+import SyntaxHighlighter from 'react-syntax-highlighter';
 
 // eslint-disable-next-line no-undef
 const complexExample = require('fs').readFileSync(__dirname + '/../../monkey-patches/patch.js', 'utf8');
@@ -14,7 +15,7 @@ export default class SimplePatch extends PatchableComponent {
         <p>
           Below is an incredibly cut down version of the kind of monkey patch that the following few examples use.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" useInlineStyles={false}>
           {`// Store the original function
 const originalCreateElement = React.createElement;
 
@@ -34,7 +35,7 @@ React.createElement = function () {
   // Apply args to the original function
   return originalCreateElement.apply(React, args);
 };`}
-        </pre>
+        </SyntaxHighlighter>
         <h2>
           A complex example
         </h2>
@@ -45,7 +46,9 @@ React.createElement = function () {
         <p>
           This also handles a lot more cases such as React 16's string / array components, and nested arrays.
         </p>
-        <pre>{complexExample}</pre>
+        <SyntaxHighlighter language="javascript" useInlineStyles={false}>
+          {complexExample}
+        </SyntaxHighlighter>
       </div>
     );
   }
