@@ -1,6 +1,80 @@
 import React from 'react';
 import ApplyButton from '../apply-button';
 import PatchableComponent from '../../monkey-patches/patchable-component';
+import SimpleStore from '../../simple-store';
+
+const initialState = {
+  count: 0
+};
+
+const store = new SimpleStore(initialState);
+
+class Count extends PatchableComponent {
+  constructor (props) {
+    super(props);
+
+    this.state = initialState;
+    this.updateState = this.setState.bind(this);
+  }
+
+  componentDidMount () {
+    super.componentDidMount();
+
+    this.unsubscribe = store.subscribe(this.updateState);
+  }
+
+  componentWillUnmount () {
+    super.componentWillUnmount();
+
+    this.unsubscribe();
+  }
+
+  render () {
+    const { count } = this.state;
+
+    return (
+      <strong>
+        Count: {count}
+      </strong>
+    );
+  }
+}
+
+class Increment extends PatchableComponent {
+  constructor (props) {
+    super(props);
+
+    this.state = initialState;
+    this.increment = this.increment.bind(this);
+    this.updateState = this.setState.bind(this);
+  }
+
+  componentDidMount () {
+    super.componentDidMount();
+
+    this.unsubscribe = store.subscribe(this.updateState);
+  }
+
+  componentWillUnmount () {
+    super.componentWillUnmount();
+
+    this.unsubscribe();
+  }
+
+  increment () {
+    const { count } = this.state;
+
+    store.set('count', count + 1);
+  }
+
+  render () {
+    return (
+      <button onClick={this.increment}>
+        Increment
+      </button>
+    );
+  };
+}
 
 export default class ReactHighlightUpdates extends PatchableComponent {
   render () {
@@ -33,6 +107,12 @@ export default class ReactHighlightUpdates extends PatchableComponent {
         </p>
         <p>
           Press the "Apply monkey patch" button above to give it a go now.
+        </p>
+        <p>
+          <Count />
+        </p>
+        <p>
+          <Increment />
         </p>
       </div>
     );
