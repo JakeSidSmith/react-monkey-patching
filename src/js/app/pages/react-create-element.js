@@ -23,7 +23,13 @@ export default class ReactCreateElement extends PatchableComponent {
 </div>`}
         </pre>
         <p>
-          But you may not know that all of your JSX markup actually compiles down into one simple function:
+          But you may not know that all of your JSX markup actually compiles down into one simple function.
+        </p>
+        <p>
+          Well, it's not exactly that simple, but for the purposes of these demos, let's assume it is.
+        </p>
+        <p>
+          Here's what the above JSX compiles down to:
         </p>
         <pre>
           {'React.createElement(\'div\', {className: \'my-div\'}, \'Hello, World!\')'}
