@@ -6,27 +6,33 @@ const patchedMethods = [];
 
 const HIGHLIGHT_CLASS = 'react-update-highlight';
 const MATCHES_HIGHLIGHT_CLASS = /\s*\breact-update-highlight\b\s*/gi;
+const DEFAULT_COLOR = 'rgba(255, 0, 0, 0.5)';
 
 const STYLE = document.createElement('style');
 STYLE.type = 'text/css';
 
-const highlightUpdates = (color = 'rgba(255, 0, 0, 0.5)') => {
-  STYLE.innerHTML =
-`.react-update-highlight {
-  animation-name: react-update-highlight;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-}
-@keyframes react-update-highlight {
-  from {
-    background-color: ${color};
+const createStyles = (color = DEFAULT_COLOR) => {
+  return `.react-update-highlight {
+    animation-name: react-update-highlight;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
   }
-  to {
-    background-color: transparent;
-  }
-}`;
+  @keyframes react-update-highlight {
+    from {
+      background-color: ${color};
+    }
+    to {
+      background-color: transparent;
+    }
+  }`;
+};
 
-  document.head.appendChild(STYLE);
+STYLE.innerHTML = createStyles();
+
+document.head.appendChild(STYLE);
+
+const highlightUpdates = (color = DEFAULT_COLOR) => {
+  STYLE.innerHTML = createStyles(color);
 
   const originalCreateElement = React.createElement;
 
