@@ -26,11 +26,17 @@ export const patch = (transform) => {
       return originalCreateElement.apply(React, args);
     }
 
-    args.forEach((arg, i) => {
-      if (i >= 2) {
-        args[i] = transformPossibleArrays(arg);
+    if (typeof element === 'string') {
+      args.forEach((arg, i) => {
+        if (i >= 2) {
+          args[i] = transformPossibleArrays(arg);
+        }
+      });
+
+      if (props && props.children) {
+        props.children = transformPossibleArrays(props.children);
       }
-    });
+    }
 
     if (typeof element === 'function') {
       if (
