@@ -8,7 +8,7 @@ export default class MaterialUI extends PatchableComponent {
       <div>
         <ApplyButton patch="materialUIButtonEffect" />
         <h2>
-          Want that Google look?
+          Get the Google look
         </h2>
         <button>
           Test button!
