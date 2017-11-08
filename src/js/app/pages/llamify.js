@@ -21,7 +21,7 @@ export default class Llamify extends PatchableComponent {
           For demonstration purposes there are a bunch of varying elements below that are translated.
         </p>
         <p>
-          Note how it does not translate anything typed into the input.
+          Note how it does not translate anything typed into the input, even though this is a value being set in state.
         </p>
         <BasicElements />
       </div>
