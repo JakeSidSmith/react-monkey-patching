@@ -518,7 +518,7 @@ exports[`App should match snapshot when scrambled 1`] = `
           <h1
             className="page-title"
           >
-            Itrno
+            Itnro
           </h1>
           <div
             className="scrollable"
