@@ -1,16 +1,14 @@
 import { create } from 'random-seed';
 import { patch } from './patch';
 
-const SEED = 'my-random-seed';
-
-const random = create(SEED);
-
 const wordFinder = /\b[a-z]+\b/gi;
 
 const scrambleWord = (word) => {
-  if (word.length <= 2) {
+  if (word.length <= 3) {
     return word;
   }
+
+  const random = create(word.toLowerCase());
 
   const newWord = word.split('');
   const firstLetter = newWord.shift();
