@@ -424,7 +424,7 @@ exports[`App should match snapshot when scrambled 1`] = `
                 href="#/"
                 onClick={[Function]}
               >
-                Inrto
+                Itnro
               </a>
             </li>
             <li>
@@ -432,7 +432,7 @@ exports[`App should match snapshot when scrambled 1`] = `
                 href="#/what-is-monkey-patching/"
                 onClick={[Function]}
               >
-                Waht is mkoney pnithcag?
+                What is mnoeky phtciang?
               </a>
             </li>
             <li>
@@ -440,7 +440,7 @@ exports[`App should match snapshot when scrambled 1`] = `
                 href="#/why-react-create-element/"
                 onClick={[Function]}
               >
-                Why Recat?
+                Why Racet?
               </a>
             </li>
             <li>
@@ -448,7 +448,7 @@ exports[`App should match snapshot when scrambled 1`] = `
                 href="#/react-highlight-updates/"
                 onClick={[Function]}
               >
-                Recat hghigilht updetas
+                Racet hliigghht utepads
               </a>
             </li>
             <li>
@@ -456,7 +456,7 @@ exports[`App should match snapshot when scrambled 1`] = `
                 href="#/react-fastclick/"
                 onClick={[Function]}
               >
-                React ftscclaik
+                Racet ftcislack
               </a>
             </li>
             <li>
@@ -464,7 +464,7 @@ exports[`App should match snapshot when scrambled 1`] = `
                 href="#/material-ui-button-effect/"
                 onClick={[Function]}
               >
-                Mtriaael UI botutn ecefft
+                Maiertal UI bouttn eeffct
               </a>
             </li>
             <li>
@@ -472,7 +472,7 @@ exports[`App should match snapshot when scrambled 1`] = `
                 href="#/simple-patch-function/"
                 onClick={[Function]}
               >
-                Sipmle patch fciotnun
+                Sipmle patch fnctioun
               </a>
             </li>
             <li>
@@ -480,7 +480,7 @@ exports[`App should match snapshot when scrambled 1`] = `
                 href="#/llamify/"
                 onClick={[Function]}
               >
-                Limlafy
+                Llmafiy
               </a>
             </li>
             <li>
@@ -488,7 +488,7 @@ exports[`App should match snapshot when scrambled 1`] = `
                 href="#/scramble/"
                 onClick={[Function]}
               >
-                Sbcalmre
+                Smrclbae
               </a>
             </li>
             <li>
@@ -496,7 +496,7 @@ exports[`App should match snapshot when scrambled 1`] = `
                 href="#/internationalization/"
                 onClick={[Function]}
               >
-                Iineztottnalaroaiinn
+                Iiaterniaoozttnialnn
               </a>
             </li>
             <li>
@@ -518,7 +518,7 @@ exports[`App should match snapshot when scrambled 1`] = `
           <h1
             className="page-title"
           >
-            Irnto
+            Itrno
           </h1>
           <div
             className="scrollable"
@@ -531,25 +531,25 @@ exports[`App should match snapshot when scrambled 1`] = `
               >
                 <div>
                   <h2>
-                    Menoky Phatnicg Raect
+                    Mnoeky Phtciang Racet
                   </h2>
                   <p>
-                    Hello! My name is Jake, and today I'm giong to show you some tltoaly not hkacs at all, belveie me, I pmriose, rellay not hacks... aeowmse mkenoy pthinacg of React.
+                    Hello! My nmae is Jake, and tadoy I'm gniog to sohw you some ttoally not hakcs at all, blievee me, I poirmse, raelly not hakcs... aseowme mnoeky phtciang of Racet.
                   </p>
                   <h2>
-                    Want more awsomee sutff?
+                    Want mroe aseowme sfutf?
                   </h2>
                   <p>
-                    Hree's some lkins you mhigt ejnoy:
+                    Here's some likns you mhigt enjoy:
                   </p>
                   <ul>
                     <li>
                       <a
                         href="https://github.com/JakeSidSmith/react-monkey-patching"
                         target="_blank"
-                        title="This dmeo"
+                        title="This demo"
                       >
-                        This dmeo - gituhb.com/JiSdkamiSeth/recat-meknoy-ptchinag
+                        This demo - ghutib.com/JaidtkmieSSh/racet-mnoeky-phtciang
                       </a>
                     </li>
                     <li>
@@ -558,7 +558,7 @@ exports[`App should match snapshot when scrambled 1`] = `
                         target="_blank"
                         title="My Bolg"
                       >
-                        My Bolg - jaksitmedish.com
+                        My Bolg - jaidtkmiessh.com
                       </a>
                     </li>
                     <li>
@@ -567,34 +567,34 @@ exports[`App should match snapshot when scrambled 1`] = `
                         target="_blank"
                         title="My GHutib"
                       >
-                        My GitHub - giuhtb.com/jdesskmtiaih
+                        My GHutib - ghutib.com/jaidtkmiessh
                       </a>
                     </li>
                     <li>
                       <a
                         href="https://twitter.com/jakesidsmith"
                         target="_blank"
-                        title="My Ttwietr"
+                        title="My Tweittr"
                       >
-                        My Ttweitr - twtiter.com/jmaidsketish
+                        My Tweittr - tweittr.com/jaidtkmiessh
                       </a>
                     </li>
                     <li>
                       <a
                         href="https://www.npmjs.com/package/react-highlight-updates"
                         target="_blank"
-                        title="Racet Hggilhhit Uaetdps"
+                        title="Racet Hliigghht Utepads"
                       >
-                        React Hhgilihgt Uaepdts (we'll coevr tihs srtlhoy) - nmpjs.com/pgaacke/racet-hihlhiggt-utdepas
+                        Racet Hliigghht Utepads (we'll cvoer this sthorly) - njmps.com/pkaacge/racet-hliigghht-utepads
                       </a>
                     </li>
                     <li>
                       <a
                         href="https://www.npmjs.com/package/react-fastclick"
                         target="_blank"
-                        title="Racet Fatcclsik"
+                        title="Racet Ftcislack"
                       >
-                        React Flacstick (we'll coevr this berlfiy aslo) - nmjps.com/packgae/react-fisatcclk
+                        Racet Ftcislack (we'll cvoer this bifelry also) - njmps.com/pkaacge/racet-ftcislack
                       </a>
                     </li>
                   </ul>
