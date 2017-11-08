@@ -11,6 +11,9 @@
 @code-background: #FAFAFA;
 @boder-color: #DDD;
 
+@primary: #d64fcf;
+@secondary: #e48e26;
+
 @button-background-color: #2887AD;
 @button-color: #FFF;
 @apply-button-background-color: #29D77C;
@@ -163,8 +166,13 @@ button {
   cursor: pointer;
   font-size: @font-size-base;
 
-  display: block;
-  margin: 0 auto;
+  &.primary {
+    background-color: @primary;
+  }
+
+  &.secondary {
+    background-color: @secondary;
+  }
 }
 
 .remove-button,
@@ -187,4 +195,18 @@ button {
   background-color: @remove-button-background-color;
   padding: @padding-base / 2 @padding-base;
   font-size: @font-size-base;
+}
+
+.spaced-buttons {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+
+  button {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }

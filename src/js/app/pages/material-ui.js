@@ -17,9 +17,17 @@ export default class MaterialUI extends PatchableComponent {
         <p>
           Note: the apply & remove patch buttons have monkey patching disabled in this demo.
         </p>
-        <button>
-          Test button!
-        </button>
+        <div className="spaced-buttons">
+          <button>
+            Test button!
+          </button>
+          <button className="primary">
+            Test button!
+          </button>
+          <button className="secondary">
+            Test button!
+          </button>
+        </div>
       </div>
     );
   }
