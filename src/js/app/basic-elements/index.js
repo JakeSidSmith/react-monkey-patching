@@ -95,7 +95,7 @@ export default class BasicElements extends PatchableComponent {
           </a>
         </p>
         <p>
-          Short word that doesn't need scrambling: "hi"
+          Short words that doesn't need scrambling: "hi", "hey"
         </p>
       </div>
     );

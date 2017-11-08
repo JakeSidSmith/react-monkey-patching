@@ -4,7 +4,7 @@ import { patch } from './patch';
 const wordFinder = /\b[a-z]+\b/gi;
 
 const scrambleWord = (word) => {
-  if (word.length <= 2) {
+  if (word.length <= 3) {
     return word;
   }
 
