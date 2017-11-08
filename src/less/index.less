@@ -11,7 +11,8 @@
 @code-background: #FAFAFA;
 @boder-color: #DDD;
 
-@apply-button-color: #FFF;
+@button-background-color: #2887AD;
+@button-color: #FFF;
 @apply-button-background-color: #29D77C;
 @apply-button-font-size: 20px;
 
@@ -151,18 +152,27 @@ pre {
   }
 }
 
-.remove-button,
-.apply-button {
+button {
   appearance: none;
-  display: block;
-  margin: 0 auto;
-  cursor: pointer;
+  display: inline-block;
   padding: @padding-base @padding-base * 2;
   border-radius: 4px;
   border: none;
+  background-color: @button-background-color;
+  color: @button-color;
+  cursor: pointer;
+  font-size: @font-size-base;
+
+  display: block;
+  margin: 0 auto;
+}
+
+.remove-button,
+.apply-button {
+  display: block;
+  margin: 0 auto;
   font-size: @apply-button-font-size;
   background-color: @apply-button-background-color;
-  color: @apply-button-color;
 
   &:hover {
     box-shadow: 0 1px 5px 0 @shadow-color;

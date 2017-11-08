@@ -1,11 +1,14 @@
 import llamify from './llamify';
 import scramble from './scramble';
 import highlightUpdates from './highlight-updates';
+import materialUIButtonEffect from './material-ui-button-effect';
+
 
 const PATCHES = {
   llamify,
   scramble,
-  highlightUpdates
+  highlightUpdates,
+  materialUIButtonEffect
 };
 
 const subscriptions = [];
