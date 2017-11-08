@@ -8,7 +8,7 @@ const scrambleWord = (word) => {
     return word;
   }
 
-  const random = create(word);
+  const random = create(word.toLowerCase());
 
   const newWord = word.split('');
   const firstLetter = newWord.shift();
