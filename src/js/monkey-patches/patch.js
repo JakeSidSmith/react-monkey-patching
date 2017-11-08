@@ -28,9 +28,7 @@ export const patch = (transform) => {
 
     args.forEach((arg, i) => {
       if (i >= 2) {
-        if (typeof arg === 'string') {
-          args[i] = transformPossibleArrays(arg);
-        }
+        args[i] = transformPossibleArrays(arg);
       }
     });
 
