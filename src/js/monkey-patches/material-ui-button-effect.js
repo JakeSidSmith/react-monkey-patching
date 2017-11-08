@@ -67,8 +67,14 @@ const materialUIButtonEffect = () => {
           return;
         }
 
+        const rect = node.getBoundingClientRect();
+
+        const top = event.clientY - rect.top;
+        const left = event.clientX - rect.left;
+
         const pew = document.createElement('div');
         pew.className = 'material-ui-button-effect';
+        pew.style = `top:${top}px;left:${left}px;`;
 
         node.appendChild(pew);
 
